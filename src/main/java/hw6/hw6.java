@@ -1,4 +1,4 @@
-package hw5;
+package hw6;
 
 public class hw6 {
     public static void main(String[] args) {
@@ -7,6 +7,7 @@ public class hw6 {
         System.out.println(sumOfTwoNumbers);
         boolean evenOdd = isEven(5);
         System.out.println(evenOdd);
+
 
     }
 
