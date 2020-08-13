@@ -24,7 +24,6 @@ public class work {
     //Task #2
     public static int sum1(int c,int d){
        return c+d;
-
     }
     //Task #3
     public static boolean ifEven(int g){
@@ -38,5 +37,8 @@ public class work {
     //Task #3.1
     public static boolean ifEven1(int j) {
         return j % 2 == 0;
+    }
+    public static boolean k(int p){
+        return p % 2!=0;
     }
 }
