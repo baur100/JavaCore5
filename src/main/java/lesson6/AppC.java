@@ -18,5 +18,6 @@ public class AppC {
             sum+=v;
         }
         return sum;
+//        test
     }
 }
