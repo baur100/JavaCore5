@@ -7,15 +7,15 @@ public class work5 {
         helloToYou("Anna");
 
         trip("New York", "Moscow");
-        trip("Sydney","Los Angeles");
+        trip("Sydney", "Los Angeles");
 
     }
 
-    public static void helloToYou(String name){
-        System.out.println("Hello, "+name);
+    public static void helloToYou(String name) {
+        System.out.println("Hello, " + name);
     }
 
-    public static void trip(String from,String to){
-        System.out.println("Trip from "+from+" just landed at "+to);
+    public static void trip(String from, String to) {
+        System.out.println("Trip from " + from + " just landed at " + to);
     }
 }
