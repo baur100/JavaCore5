@@ -2,20 +2,25 @@ package hw6;
 
 public class hw {
     public static void main(String[] args) {
-        // Ex 1
-        System.out.println(" ex 1");
+        // Exercise 1
+        System.out.println(" Exercise #1");
+        System.out.println("============");
         sum(1,3);
+        System.out.println("============");
 
-        // Ex 2
-        System.out.println("\n ex 2");
+        // Exercise 2
+        System.out.println("\n Exercise #2");
         int x=sum1(2,3);
+        System.out.println("============");
         System.out.println(x);
+        System.out.println("============");
 
-        System.out.println(sum1(3,3));
 
-        // Ex 3
-        System.out.println("\n ex 3");
+        // Exercise 3
+        System.out.println("\n Exercise #3");
+        System.out.println("============");
         System.out.println(isEven(15));
+        System.out.println("============");
 
 
     }
