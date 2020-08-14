@@ -1,4 +1,4 @@
-package work;
+package work7;
 
 public class Work71 {
     public static void main(String[] args) {
