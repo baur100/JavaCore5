@@ -1,6 +1,10 @@
 package lesson6;
 
 public class AppB {
+//Функции с параметрами и возвращающие
+
+//Функции которые возвращают что-то
+
     public static void main(String[] args) {
         int xx = sum_of_three_numbers(2,1,1);
         System.out.println(xx);
@@ -38,11 +42,10 @@ public class AppB {
     }
 
     public static boolean isOdd(int number){
-        if(number%2==1){
+        if(number%2==1){      //
             return true;
         } else {
             return false;
         }
     }
-
 }

@@ -1,14 +1,15 @@
 package lesson6;
 
 public class AppA {
+
+//Функции с параметрами, но ничего не возвращают
     public static void main(String[] args) {
-        helloToYou("Alena");
+        helloToYou("Alena");   //функции с параметрами
         helloToYou("Alina");
         helloToYou("Anna");
 
         trip("New York","Moscow");
         trip("Sydney","Los Angeles");
-
     }
 
     public static void helloToYou(String name){

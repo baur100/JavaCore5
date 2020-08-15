@@ -8,8 +8,6 @@ public class AppC {
 
         int[] b1 = {2,2};
         System.out.println(sumOfArray(b1));
-
-
     }
 
     public static int sumOfArray(int[] arr){
