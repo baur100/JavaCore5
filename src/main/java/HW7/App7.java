@@ -1,8 +1,7 @@
 package HW7;
 
-import javax.sound.midi.Soundbank;
+
 import java.util.Arrays;
-import java.util.Collections;
 
 public class App7 {
 
