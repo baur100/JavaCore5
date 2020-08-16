@@ -1,6 +1,6 @@
 package HW6;
 
-public class hw {
+public class it hw {
     public static void main(String[] args) {
         // Ex 1
         System.out.println(" ex 1");
