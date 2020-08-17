@@ -1,6 +1,6 @@
-package HW5;
+package HW6;
 
-public class App5 {
+public class App6 {
 
     public static void main(String[] args) {
 
