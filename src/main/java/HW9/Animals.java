@@ -43,13 +43,15 @@ public class Animals {
 
    @Override
     public String  toString() {
-      return "Animals{" +
+       return "Animals{" +
                "color='" + color + '\'' +
                ", age=" + age +
                ", vaccinesDone=" + Arrays.toString(vaccinesDone) +
                '}';
+   }
 
-
-
+   public void printArrayVaccines(Vaccines[] vaccinesDone){
+        for(Vaccines v: vaccinesDone)
+       System.out.println(v+" Vacine has been done");
    }
 }
