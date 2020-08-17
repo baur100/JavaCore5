@@ -15,6 +15,8 @@ public class Equipment {
         this.dimentions = dimentions;
     }
 
+    public Equipment(){}
+
     public String getPurpose() {
         return purpose;
     }
