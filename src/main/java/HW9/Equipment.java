@@ -42,17 +42,16 @@ public class Equipment {
     }
 
 
-
-    public void printEquipmentInfo() {
-        System.out.println("Equipment{" +
+   @Override
+    public String toString() {
+        return "Equipment{" +
                 "purpose='" + purpose + '\'' +
                 ", material='" + material + '\'' +
                 ", dimentions=" + Arrays.toString(dimentions) +
-                '}');
+                '}';
 
-        for(Dimentions v: dimentions){
-            System.out.println(v);
-        }
-    }
+
+
+              }
 
 }

@@ -41,16 +41,14 @@ public class Furniture {
     public void setAssemblyParts(AssemblyParts[] assemblyParts) {
         this.assemblyParts = assemblyParts;
     }
-
-    public void printFurnityreinfo () {
-        System.out.println("Furniture{" +
+@Override
+    public String  toString () {
+        return "Furniture{" +
                 "material='" + material + '\'' +
                 ", purpose='" + purpose + '\'' +
                 ", assemblyParts=" + Arrays.toString(assemblyParts) +
-                '}');
+                '}';
 
-        for(AssemblyParts v: assemblyParts){
-            System.out.println(v);
-        }
+
     }
 }

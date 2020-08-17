@@ -41,16 +41,15 @@ public class Animals {
         this.vaccinesDone = vaccinesDone;
     }
 
+   @Override
+    public String  toString() {
+      return "Animals{" +
+               "color='" + color + '\'' +
+               ", age=" + age +
+               ", vaccinesDone=" + Arrays.toString(vaccinesDone) +
+               '}';
 
-    public void printAnimalsInfo() {
-        System.out.println("Animals{" +
-                "color='" + color + '\'' +
-                ", age=" + age +
-                ", vaccinesDone=" + Arrays.toString(vaccinesDone) +
-                '}');
 
-           for( Vaccines v: this.vaccinesDone ){
-               System.out.println(v);
-           }
-    }
+
+   }
 }
