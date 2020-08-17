@@ -64,8 +64,20 @@ public class App4 {
             }
 
 
-
         }
+
+
+        int[] array5 = {10,15,12,7,88,10,6,17,23,10,10,16};
+
+
+       // public static void getIndex(int[] arr){
+
+            for (int i = 0; i < array5.length; i++) {
+                if (array5[i] == 10) {
+                    System.out.println(i);
+                }
+            }
+       // }
 
 
     }
