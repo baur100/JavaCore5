@@ -12,24 +12,27 @@ public class App9 {
         System.out.println(bullDog.getAge());
         bullDog.printAnimalsInfo();
 
-        Animals chihuaHua = new Animals("white", 12);
         Vaccines[] vaccines = {Vaccines.FEAWER, Vaccines.CORONAVIRUS};
+        Animals chihuaHua = new Animals("white", 12, vaccines);
+
 
         Furniture table = new Furniture();
         table.setMaterial("metal");
         System.out.println(table.getMaterial());
         table.printFurnityreinfo();
-        Furniture chair = new Furniture("wood", "constraction");
+
         AssemblyParts[] assemblyParts ={AssemblyParts.BOLTS, AssemblyParts.SCROVES};
+        Furniture chair = new Furniture("wood", "constraction",assemblyParts);
+
 
         Equipment saw = new Equipment();
         saw.setPurpose("constraction");
         System.out.println(saw.getPurpose());
         saw.printEquipmentInfo();
 
-        Equipment hammer = new Equipment("makeFurniture", "Plastic";
-        Dimentions[] dimentions ={Dimentions.SUPERSMALL, Dimentions.LARGE};
 
+        Dimentions[] dimentions ={Dimentions.SUPERSMALL, Dimentions.LARGE};
+        Equipment hammer = new Equipment("makeFurniture", "Plastic",dimentions);
 
     }
 
