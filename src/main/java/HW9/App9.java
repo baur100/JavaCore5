@@ -1,5 +1,7 @@
 package HW9;
 
+import javax.naming.spi.DirectoryManager;
+
 public class App9 {
 
     public static void main(String[] args) {
@@ -10,26 +12,26 @@ public class App9 {
         System.out.println(bullDog.getAge());
         bullDog.printAnimalsInfo();
 
-        Animals chihuaHua = new Animals("black", 12, Vaccines.FLY, Vaccines.CORONAVIRUS);
+        Animals chihuaHua = new Animals("white", 12);
+        Vaccines[] vaccines = {Vaccines.FEAWER, Vaccines.CORONAVIRUS};
 
         Furniture table = new Furniture();
         table.setMaterial("metal");
         System.out.println(table.getMaterial());
         table.printFurnityreinfo();
-        Furniture chair = new Furniture("wood", "ooficeUse", AssemblyParts.WOOD, AssemblyParts.SCROVES);
+        Furniture chair = new Furniture("wood", "constraction");
+        AssemblyParts[] assemblyParts ={AssemblyParts.BOLTS, AssemblyParts.SCROVES};
 
         Equipment saw = new Equipment();
         saw.setPurpose("constraction");
         System.out.println(saw.getPurpose());
         saw.printEquipmentInfo();
 
-        Equipment hammer = new Equipment("makeFurniture", "Plastic", Dimentions.SMALL, Dimentions.SUPERSMALL);
+        Equipment hammer = new Equipment("makeFurniture", "Plastic";
+        Dimentions[] dimentions ={Dimentions.SUPERSMALL, Dimentions.LARGE};
 
 
     }
-
-
-
 
 
 }
