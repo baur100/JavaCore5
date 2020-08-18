@@ -3,11 +3,13 @@ package hw10;
 public class Work {
     public static void main(String[] args) {
         //CLASS PHONE
-        Phone phone1 = new Phone(Brand.APPLE, 10, 1299.99, 100, "USA.");
+        Brand[] brand1 = {Brand.ONEPLUS, Brand.LG};
+        Phone phone1 = new Phone(brand1, 10, 1299.99, 100, "USA.");
         phone1.printClass();
 
         Phone phone2 = new Phone();
-        phone2.setBrand(Brand.MOTOROLLA);
+        Brand[] brand2 = {Brand.XIAOMI, Brand.MOTOROLLA, Brand.APPLE};
+        phone2.setBrand(brand2);
         phone2.setSeria(777);
         phone2.setPrice(888.99);
         phone2.setAmount(50);
@@ -23,8 +25,8 @@ public class Work {
 
 
         Shop shop2 = new Shop();
-        Days[] workdays2= {Days.FRIDAY,Days.SATURDAY,Days.SUNDAY};
-        Brand[] brandphones2={Brand.APPLE,Brand.SAMSUNG};
+        Days[] workdays2 = {Days.FRIDAY, Days.SATURDAY, Days.SUNDAY};
+        Brand[] brandphones2 = {Brand.APPLE, Brand.SAMSUNG};
         shop2.setNameshop("BestPRICE");
         shop2.setSpec("Home Goods");
         shop2.setPosition(15);
@@ -33,14 +35,14 @@ public class Work {
         shop2.printClass();
 
         //CLASS BUYERS
-        Days[] daypayment1={Days.SATURDAY};
-        Brand[] brandph1={Brand.ONEPLUS,Brand.SAMSUNG};
-        Buyers buyers1=new Buyers("Vladimir",2,2700.18,daypayment1,brandphones1);
+        Days[] daypayment1 = {Days.SATURDAY};
+        Brand[] brandph1 = {Brand.ONEPLUS, Brand.SAMSUNG};
+        Buyers buyers1 = new Buyers("Vladimir", 2, 2700.18, daypayment1, brandph1);
         buyers1.printClass();
 
-        Days[] daypayment2={Days.MONDAY,Days.TUESDAY};
-        Brand[] brandph2={Brand.XIAOMI,Brand.SAMSUNG};
-        Buyers buyers2=new Buyers();
+        Days[] daypayment2 = {Days.MONDAY, Days.TUESDAY};
+        Brand[] brandph2 = {Brand.XIAOMI, Brand.SAMSUNG};
+        Buyers buyers2 = new Buyers();
         buyers2.setName("Nik");
         buyers2.setPurchase(brandph2);
         buyers2.setDayBuy(daypayment2);

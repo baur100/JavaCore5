@@ -1,5 +1,7 @@
 package hw10;
 
+import java.util.Arrays;
+
 public class Shop {
     private String nameshop;
     private String spec;
@@ -82,6 +84,11 @@ public class Shop {
         this.workdays = NewWorkdays;
     }
 
+    // Специальная команда для распечатки аррея
+    public String printWorkdays() {
+        return Arrays.toString(workdays);
+    }
+
     public Brand[] getBrand() {
         return brandphones;
     }
@@ -90,12 +97,16 @@ public class Shop {
         this.brandphones = newBrandphones;
     }
 
-    //PRINT ALL ATTRIBUTES
-    public void printClass() {
-        System.out.println("===========" + nameshop + "SHOP INFORMATION===========");
-        System.out.println(nameshop + " Schedule: " + workdays);
-        System.out.println("Specialization of shop: " + spec + ". Current amount of other position: " + position);
-        System.out.println("Special for you, we have popular BRANDS:" + brandphones);
+    // Специальная команда для распечатки аррея
+    public String printBrand() {
+        return Arrays.toString(brandphones);
     }
 
+    //PRINT ALL ATTRIBUTES
+    public void printClass() {
+        System.out.println("===========" + nameshop + " SHOP INFORMATION===========");
+        System.out.println(nameshop + " Schedule: " + printWorkdays());
+        System.out.println("Specialization of shop: " + spec + ". Current amount of other position: " + position);
+        System.out.println("Special for you, we have popular BRANDS:" + printBrand());
+    }
 }
