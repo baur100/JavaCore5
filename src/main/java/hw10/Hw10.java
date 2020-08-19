@@ -16,26 +16,34 @@ public class Hw10 {
         Book book1 = new Book("World War 2", "History", 175, Colors.White);
         book1.printBook();
 
-        book1.setName("Harry Potter 1");
-        book1.setBookDepartment("Kids");
-        book1.setHardBookCover("Hard");
-        book1.setNumberOfPages(372);
-        book1.setColors(Colors.Green);
+        Book book = new Book();
+        book.setName("Harry Potter 1");
+        book.setBookDepartment("Kids");
+        book.setHardBookCover("Hard");
+        book.setNumberOfPages(372);
+        book.setColors(Colors.Green);
 
-        book1.printBook();
+        book.printBook();
 //class 2
         System.out.println("\n+++++++++++Another Class+++++++++++\n");
-        FastFood mcdonald = new FastFood("McDonald", 5, "breakfast, lunch, dinner", Colors.Yellow);
+        Colors[] colors = {Colors.Red, Colors.Brown, Colors.Black, Colors.Blue, Colors.Yellow, Colors.Green};
+        FastFood mcdonald = new FastFood("McDonald", 5, "breakfast, lunch, dinner", colors);
         mcdonald.printFastFood();
 
-        mcdonald.setColors(Colors.Red);
-        mcdonald.setName("ChickenHouse");
-        mcdonald.setDriveTime(20);
-        mcdonald.setMenu("All day chicken");
+        FastFood wendys = new FastFood();
+        wendys.setName("ChickenHouse");
+        wendys.setDriveTime(20);
+        wendys.setMenu("All day chicken");
 
-        mcdonald.printFastFood();
+        wendys.printFastFood();
 //class 3
         System.out.println("\n+++++++++++Another Class+++++++++++\n");
+
+        Pants pants = new Pants();
+        pants.setType("short");
+        pants.setBrand("yo bro");
+        pants.setNumbersOfPockets(23);
+        pants.setSize(Size.S);
 
         Pants jeans = new Pants(Size.L, "Levi's", "skinny jeans", 5);
         jeans.showPants();

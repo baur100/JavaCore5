@@ -1,54 +1,59 @@
 package hw10;
 
-import lesson10.Subjects;
+import java.util.Arrays;
 
 public class FastFood {
-    private String Name;
-    private int DriveTime;
-    private String Menu;
-    private Colors color;
-    //private Colors[] colors;
+    private String name;
+    private int driveTime;
+    private String menu;
+    //private Colors color;
+    private Colors[] colors;
 
-    public FastFood(String name, int driveTime, String menu, Colors color) {
-        this.Name = name;
-        this.DriveTime = driveTime;
-        this.Menu = menu;
-        this.color = color;
+    public FastFood(String name, int driveTime, String menu, Colors[] colors) {
+        this.name = name;
+        this.driveTime = driveTime;
+        this.menu = menu;
+        this.colors = colors;
     }
 
+    public FastFood(){}
+
     public void setName(String name) {
-        this.Name = name;
+        this.name = name;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setDriveTime(int time) {
-        this.DriveTime = time;
+        this.driveTime = time;
     }
 
     public int getDriveTime() {
-        return DriveTime;
+        return driveTime;
     }
 
     public void setMenu(String menu) {
-        this.Menu=menu;
+        this.menu =menu;
     }
     public String getMenu(){
-        return Menu;
+        return menu;
     }
 
-    public void setColors(Colors colors){
-        this.color = colors;
+    public void setColors(Colors[] colors){
+        this.colors = colors;
     }
-    public Colors getColors(){
-        return color;
+    public Colors[] getColors(){
+        return colors;
+    }
+    public String printColorsArray(){
+        return Arrays.toString(colors);
     }
 
     public void printFastFood(){
-        System.out.println("Do you want to eat cheat meal at " + Name + ", where Trade Mark in " +
-                color + " color, and driving time is "+ DriveTime + " minutes. Menu is here: "+ Menu);
+        System.out.println("Do you want to eat cheat meal at " + name + ", where Trade Mark in " +
+                printColorsArray() + " color, and driving time is "+ driveTime + " minutes. Menu is here: "+ menu);
     }
 
 

@@ -1,39 +1,40 @@
 package hw10;
 
 public class Book {
-    private String Name;
-    private int NumberOfPages;
-    private String BookDepartment;
-    private String HardBookCover;
+    private String name;
+    private int numberOfPages;
+    private String bookDepartment;
+    private String hardBookCover;
     private Colors colors;
 
     public Book(String Name, String BookDepartment, int numberOfPages, Colors color){
-        this.Name = Name;
-        this.BookDepartment = BookDepartment;
-        this.NumberOfPages = numberOfPages;
+        this.name = Name;
+        this.bookDepartment = BookDepartment;
+        this.numberOfPages = numberOfPages;
         this.colors = color;
     }
+    public Book(){}
 
     public void setName(String Name){
-        this.Name = Name;
+        this.name = Name;
     }
     public String getName(){
-        return Name;
+        return name;
     }
     public void setNumberOfPages(int Number){
-        this.NumberOfPages = Number;
+        this.numberOfPages = Number;
     }
     public int getNumberOfPages(){
-        return NumberOfPages;
+        return numberOfPages;
     }
     public void setHardBookCover(String hardBookCover){
-        this.HardBookCover = hardBookCover;
+        this.hardBookCover = hardBookCover;
     }
     public String getHardBookCover(){
-        return HardBookCover;
+        return hardBookCover;
     }
     public void setBookDepartment(String department){
-        this.BookDepartment = department;
+        this.bookDepartment = department;
     }
     public void setColors(Colors color){
         this.colors=color;
@@ -43,8 +44,8 @@ public class Book {
     }
 
     public void printBook(){
-        System.out.println("I just finished reading book: " + Name + ", this book having " + NumberOfPages +
-                " pages. I have found this book in: "+ BookDepartment + " selection and the Covering of the book is in "
-                + colors + " color and " + HardBookCover + " cover");
+        System.out.println("I just finished reading book: " + name + ", this book having " + numberOfPages +
+                " pages. I have found this book in: "+ bookDepartment + " selection and the Covering of the book is in "
+                + colors + " color and " + hardBookCover + " cover");
     }
 }
