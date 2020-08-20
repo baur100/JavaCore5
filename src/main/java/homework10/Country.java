@@ -42,7 +42,7 @@ public class Country {
         this.political_system = political_system;
     }
 
-    public void setMain_resources(Resources[] resourcesCH) {
+    public void setMain_resources(Resources[] main_resourсes) {
         this.main_resourсes = main_resourсes;
     }
 
