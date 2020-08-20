@@ -21,9 +21,11 @@ public class Hw10 {
         Phones Samsung = new Phones();
 
         Apple.PrintPhoneInfo();
+        System.out.println("Samsung");
         Samsung.setBrand("Samsung");
-        System.out.println(Samsung.getBrand());
-        Samsung.PrintPhoneInfo();
+        Colors[] col = {Colors.BLACK,Colors.BLUE,Colors.PINK,Colors.WHITE};
+        Samsung.setColors(col);
+        Samsung.printColors(col);
         System.out.println("===============================================================");
 
         Movies Titanic = new Movies("Titanic",1997,200,Genre.DRAMA);
