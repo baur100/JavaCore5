@@ -42,7 +42,7 @@ public class Country {
         this.political_system = political_system;
     }
 
-    public void setMain_recources(Resources main_recourses) {
+    public void setMain_resources(Resources[] resourcesCH) {
         this.main_resourсes = main_resourсes;
     }
 
@@ -51,14 +51,15 @@ public class Country {
     }
 
     public void setMain_resourсes(Resources[] main_resourсes) {
-        this.main_resourсes = main_resourсes;
-    }
+        this.main_resourсes = main_resourсes;}
+    
 
-    public Country(String full_name, String abbreviation, int population, String political_system) {
+    public Country(String full_name, String abbreviation, int population, String political_system, Resources[] main_resourсes) {
         this.full_name = full_name;
         this.abbreviation = abbreviation;
         this.population = population;
         this.political_system = political_system;
+        this.main_resourсes = main_resourсes;
     }
 
     public Country() {
@@ -73,6 +74,7 @@ public class Country {
                 ", Main resourсes- " + Arrays.toString(main_resourсes));
 
         }
-    }
+
+}
 
 
