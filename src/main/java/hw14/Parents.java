@@ -1,5 +1,7 @@
 package hw14;
 
+import java.util.Arrays;
+
 public class Parents extends Family{
     private String name;
     private int age;
@@ -25,6 +27,7 @@ public class Parents extends Family{
 
     public void setAge(int age) {
         this.age = age;
+
     }
 
     @Override
@@ -32,7 +35,24 @@ public class Parents extends Family{
         return "Parents{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", lastName='" + lastName + '\'' +
+                ", address=" + address +
+                ", schools=" + Arrays.toString(schools) +
+                ", vacation=" + vacation +
                 '}';
     }
+//
+//    public void printParent (String name){
+//        System.out.println("Parents{" +
+//                "name='" + name + '\'' +
+//                ", age=" + age +
+//                ", lastName='" + lastName + '\'' +
+//                ", address=" + address +
+//                ", schools=" + Arrays.toString(schools) +
+//                ", vacation=" + vacation +
+//                '}');
+
+
+
 }
 

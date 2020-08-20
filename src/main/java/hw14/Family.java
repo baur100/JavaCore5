@@ -1,10 +1,12 @@
 package hw14;
 
+import java.util.Arrays;
+
 public class Family {
-    private String lastName;
-    private Address address;
-    private SchoolsAttended[] schools;
-    private Vacation vacation;
+    protected String lastName;
+    protected Address address;
+    protected SchoolsAttended[] schools;
+    protected Vacation vacation;
 
     public String getLastName() {
         return lastName;
@@ -33,7 +35,28 @@ public class Family {
         this.vacation = vacation;
 
 
-
-
     }
+
+//    @Override
+//    public String toString() {
+//        return "Family{" +
+//                "lastName='" + lastName + '\'' +
+//                ", address=" + address +
+//                ", schools=" + Arrays.toString(schools) +
+//                ", vacation=" + vacation +
+//                '}';
+//    }
+
+
+//    public void printParent(String name) {
+//        System.out.println("Parents{" +
+//                "name='" + name + '\'' +
+//                ", age=" +
+//                ", lastName='" + lastName + '\'' +
+//                ", address=" + address +
+//                ", schools=" + Arrays.toString(schools) +
+//                ", vacation=" + vacation +
+//                '}');
+//
+//    }
 }
