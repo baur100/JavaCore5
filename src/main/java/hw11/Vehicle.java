@@ -2,7 +2,7 @@ package hw11;
 
 import java.util.Arrays;
 
-public class Vehicle {
+abstract class Vehicle {
     protected String brand;
     protected String name;
     protected int year;
@@ -12,6 +12,9 @@ public class Vehicle {
         this.brand = brand;
         this.name = name;
         this.year = year;
+
+    }
+    public Vehicle(){
 
     }
 
@@ -39,8 +42,12 @@ public class Vehicle {
         this.year = year;
     }
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "Vehicle" +
+                "\nbrand='" + brand + '\'' +
+                "\nname='" + name + '\'' +
+                "\nyear=" + year +
+                "\n********************************";
+    }
 }

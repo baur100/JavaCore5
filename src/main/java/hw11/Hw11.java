@@ -3,22 +3,20 @@ package hw11;
 public class Hw11 {
 
     public static void main(String[] args) {
-        Vehicle GeneralVehicle = new Car("GMC","Sierra",2020,FuelType.GAS);
-        GeneralVehicle.setYear(2019);
-        System.out.println(GeneralVehicle);
 
-        Vehicle Audi = new Car("Audi", "S5", 2018,FuelType.HYBRID);
-        System.out.println(Audi);
 
-        System.out.println("===========================================================");
+        Colors[] colors = {Colors.WHITE,Colors.BLACK,Colors.RED,Colors.YELLOW,Colors.BLUE};
 
-        Vehicle Airbus = new Plane("Airbus","425",2015,FuelType.GAS);
-        System.out.println(Airbus);
+        Car Audi = new Car("Audi", "S5", 2018,FuelType.HYBRID,Colors.BLUE);
+        Audi.getColors();
+        System.out.println(Audi.toString());
 
-        System.out.println("==============================================================");
+        Plane Airbus = new Plane("Airbus","425",2015,FuelType.GAS);
+        System.out.println(Airbus.toString());
 
-        Vehicle Bike = new Bicycle("Strinx","Equinox",2020,FuelType.ELECTRIC);
-        System.out.println(Bike);
+
+        Bicycle Bike = new Bicycle("Strinx","Equinox",2020,FuelType.ELECTRIC);
+        System.out.println(Bike.toString());
 
     }
 

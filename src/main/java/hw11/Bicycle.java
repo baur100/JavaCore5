@@ -10,10 +10,10 @@ public class Bicycle extends Plane{
 
     @Override
     public String toString() {
-        return "Bicycle{" +
-                "brand='" + brand + '\'' +
-                ", name='" + name + '\'' +
-                ", year=" + year +
-                '}';
+        return "Bicycle: " +
+                "\nbrand='" + brand + '\'' +
+                "\nname='" + name + '\'' +
+                "\nyear=" + year +
+                "\n**********************************";
     }
 }
