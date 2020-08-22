@@ -39,4 +39,18 @@ public class Kids extends Family {
                 ", vacation=" + vacation +
                 '}';
     }
-}
+
+    public void printKid (String name){
+        System.out.println("KId{" +
+                "name='" + kidName + '\'' +
+                ", age=" + kidAge+
+                ", lastName='" + lastName + '\'' +
+                ", address=" + address +
+                ", schools=" + Arrays.toString(schools) +
+                ", vacation=" + vacation +
+                '}');
+
+
+}}
+
+

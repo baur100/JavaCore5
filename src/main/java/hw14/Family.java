@@ -48,15 +48,15 @@ public class Family {
 //    }
 
 
-//    public void printParent(String name) {
-//        System.out.println("Parents{" +
-//                "name='" + name + '\'' +
-//                ", age=" +
-//                ", lastName='" + lastName + '\'' +
-//                ", address=" + address +
-//                ", schools=" + Arrays.toString(schools) +
-//                ", vacation=" + vacation +
-//                '}');
-//
-//    }
+    public void printParent(String name) {
+        System.out.println("Parents{" +
+                "name='" + name + '\'' +
+                ", age=" +
+                ", lastName='" + lastName + '\'' +
+                ", address=" + address +
+                ", schools=" + Arrays.toString(schools) +
+                ", vacation=" + vacation +
+                '}');
+
+    }
 }

@@ -13,10 +13,10 @@ public class App {
         Parents Tim = new Parents("Doe", parentAddress, SchoolsForTim, Vacation.HAWAII_2017, "Tim", 41);
 
 
-//        System.out.println(Tim);
+        System.out.println(Tim);
 
-        Tim.getVacation();
-        Tim.getAddress();
+        System.out.println(Tim.getVacation());
+////        Tim.getAddress();
 
 
         Address andrewAddress = new Address("121 Milk Ave", 23, "Odessa", "Brendon");
@@ -25,7 +25,8 @@ public class App {
         Kids Andrew = new Kids("Gellar", andrewAddress, schoolsForAndrew, Vacation.DENVER_2019, "Andrew", 8);
         System.out.println(Andrew);
 
-        Andrew.getKidName();
+//        System.out.println();
+        Andrew.printKid("Andrew_Kid");
     }
 }
 
