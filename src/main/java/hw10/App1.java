@@ -18,7 +18,7 @@ public class App1 {
         spider.printInfo();
 
         Mammalian mammalian = new Mammalian();
-        Aptitudes [] aptitudes1 = {Aptitudes.JUMP, Aptitudes.RUN};
+        Aptitudes[] aptitudes1 = {Aptitudes.JUMP, Aptitudes.RUN};
 
         mammalian.setAptitudes(aptitudes1);
         mammalian.setHazardClass("Dangerous");

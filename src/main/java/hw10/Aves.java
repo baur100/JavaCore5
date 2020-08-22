@@ -6,46 +6,42 @@ public class Aves {
     private int averageSize;
 
 
-    public Aves(String a, String hc, int c) {
-        type = a;
-        hazardClass = hc;
-        averageSize = c;
-    }
-
-    public Aves() {
-
-    }
-
-    public void setType(String type) {
-
-    }
-
-    public void setHazardClass(String hazardClass) {
-
-    }
-
-    public void setAverageSize(int averageSize) {
-
+    public Aves(String type, String hazardClass, int averageSize) {
+        this.type = type;
+        this.hazardClass = hazardClass;
+        this.averageSize = averageSize;
     }
 
     public String getType() {
         return type;
     }
 
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public String getHazardClass() {
         return hazardClass;
     }
 
-    public void AverageSize() {
-
+    public void setHazardClass(String hazardClass) {
+        this.hazardClass = hazardClass;
     }
 
-    public void printInfo() {
-        System.out.println("Aves{" +
+    public int getAverageSize() {
+        return averageSize;
+    }
+
+    public void setAverageSize(int averageSize) {
+        this.averageSize = averageSize;
+    }
+
+    public String printInfo() {
+        return "Aves{" +
                 "type='" + type + '\'' +
                 ", hazardClass='" + hazardClass + '\'' +
-                ", averageSize='" + averageSize + '\'' +
-                '}');
+                ", averageSize=" + averageSize +
+                '}';
     }
 }
 

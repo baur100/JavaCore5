@@ -6,46 +6,42 @@ public class Arachnids {
     private int numberOfPaws;
 
 
-    public Arachnids(String tp, String hc, int np) {
-        this.type = tp;
-        this.hazardClass = hc;
-        this.numberOfPaws = np;
-    }
-
-    public Arachnids() {
-
-    }
-
-    public void setType(String type) {
-
-    }
-
-    public void setHazardClass(String hazardClass) {
-
-    }
-
-    public void setNumberOfPaws(int numberOfPaws) {
-
+    public Arachnids(String type, String hazardClass, int numberOfPaws) {
+        this.type = type;
+        this.hazardClass = hazardClass;
+        this.numberOfPaws = numberOfPaws;
     }
 
     public String getType() {
         return type;
     }
 
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public String getHazardClass() {
         return hazardClass;
     }
 
+    public void setHazardClass(String hazardClass) {
+        this.hazardClass = hazardClass;
+    }
+
     public int getNumberOfPaws() {
         return numberOfPaws;
-
     }
 
-    public void printInfo() {
-        System.out.println("Arachnids{" +
+    public void setNumberOfPaws(int numberOfPaws) {
+        this.numberOfPaws = numberOfPaws;
+    }
+
+    public String printInfo() {
+        return "Arachnids{" +
                 "type='" + type + '\'' +
                 ", hazardClass='" + hazardClass + '\'' +
-                ", numberOfPaws='" + numberOfPaws + '\'' +
-                '}');
+                ", numberOfPaws=" + numberOfPaws +
+                '}';
     }
 }
+
