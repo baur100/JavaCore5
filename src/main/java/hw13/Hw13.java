@@ -11,7 +11,7 @@ public class Hw13 {
         car.add("GMC");
         car.add("Tesla");
 
-        car.forEach(cars-> System.out.println(car));
+        car.forEach(c-> System.out.println(c));
         System.out.println("***********************************");
 
 
@@ -23,7 +23,7 @@ public class Hw13 {
         model.add(425);
         model.add(3);
 
-        model.forEach(carmodels-> System.out.println(model));
+        model.forEach(x-> System.out.println(x));
         System.out.println("*****************************************");
 
 
@@ -33,7 +33,7 @@ public class Hw13 {
         saleHouse.add(new House("Sacramento",700000));
         saleHouse.add(new House("Miami",500000));
 
-        saleHouse.forEach(city-> System.out.println(saleHouse));
+        saleHouse.forEach(v-> System.out.println(v));
 
 
 

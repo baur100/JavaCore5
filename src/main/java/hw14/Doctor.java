@@ -10,6 +10,7 @@ public class Doctor {
         this.lastname = lastname;
         this.position = position;
     }
+    public Doctor(){}
 
     public String getName() {
         return name;
@@ -33,5 +34,14 @@ public class Doctor {
 
     public void setPosition(Position position) {
         this.position = position;
+    }
+
+    @Override
+    public String toString() {
+        return "\nDoctor" +
+                "\nname='" + name + '\'' +
+                "\nlastname='" + lastname + '\'' +
+                "\nposition=" + position +
+                "\n***************************************************";
     }
 }

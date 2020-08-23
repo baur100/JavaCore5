@@ -14,7 +14,7 @@ public class ForHash {
         colors.put("Black",3);
 
         for(String v: colors.keySet()) {
-            System.out.println(v);
+            System.out.println(v+" Colors ");
         }
 
         HashMap<String,Integer> house = new HashMap<>();
@@ -24,7 +24,7 @@ public class ForHash {
         sale.put("H3", new House("Atlanta",400000));
 
         for (String h: sale.keySet()){
-            System.out.println(h);
+            System.out.println(h+" Houses ");
         }
         for (Map.Entry<String,House> set: sale.entrySet()){
             System.out.println(set.getKey());
