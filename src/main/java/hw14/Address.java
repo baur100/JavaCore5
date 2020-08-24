@@ -6,4 +6,21 @@ public class Address {
     private String state;
     private int zip;
 
+    public Address(String streetAddress, String town, String state, int zip) {
+        this.streetAddress = streetAddress;
+        this.town = town;
+        this.state = state;
+        this.zip = zip;
+    }
+    public Address(){}
+
+    @Override
+    public String toString() {
+        return "\nAddress" +
+                "\nstreetAddress='" + streetAddress + '\'' +
+                "\ntown='" + town + '\'' +
+                "\nstate='" + state + '\'' +
+                "\nzip=" + zip +
+                "\n**************************************************";
+    }
 }

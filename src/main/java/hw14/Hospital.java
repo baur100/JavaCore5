@@ -8,36 +8,19 @@ public class Hospital {
     private String hospitalName;
     private Address address;
     private ArrayList<Doctor> doctors;
+    private HashMap<Integer,Position> rooms;
+    private ArrayList<Insurance> acceptedInsurances;
 
-    Doctor James = new Doctor("James","Jameson",Position.CARDIOLOGIST);
-    Doctor Ivan = new Doctor("Ivan","Ivanov",Position.DERMATOLOGIST);
-    Doctor Susan = new Doctor("Susan","Simpson",Position.PEDIATRIC);
-    Doctor Mike = new Doctor("Mike", "Pense",Position.PHYSICIAN);
-    Doctor Lukas = new Doctor("Lukas","Cane",Position.SURGEON);
-
-
-    private HashMap<Integer,String> rooms;
-
-    Rooms f1 = new Rooms(1,Position.SURGEON);
-    Rooms f2 = new Rooms(2,Position.PHYSICIAN);
-    Rooms f3 = new Rooms(3,Position.PEDIATRIC);
-    Rooms f4 = new Rooms(4,Position.DERMATOLOGIST);
-    Rooms f5 = new Rooms(5,Position.CARDIOLOGIST);
-
-    private ArrayList<Insurance> acceptedInsurances = new ArrayList<>();
-
-
-
-
-
-
-
-
-
-    public Hospital(String hospitalName, Address address) {
+    public Hospital(String hospitalName, Address address, ArrayList<Doctor> doctors, HashMap<Integer, Position> rooms, ArrayList<Insurance> acceptedInsurances) {
         this.hospitalName = hospitalName;
         this.address = address;
+        this.doctors = doctors;
+        this.rooms = rooms;
+        this.acceptedInsurances = acceptedInsurances;
     }
+
+
+    public Hospital(){}
 
     public String getHospitalName() {
         return hospitalName;
@@ -54,4 +37,62 @@ public class Hospital {
     public void setAddress(Address address) {
         this.address = address;
     }
+
+    public ArrayList<Doctor> getDoctors() {
+        return doctors;
+    }
+
+    public void setDoctors(ArrayList<Doctor> doctors) {
+        this.doctors = doctors;
+    }
+
+    public HashMap<Integer, Position> getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(HashMap<Integer, Position> rooms) {
+        this.rooms = rooms;
+    }
+
+    public ArrayList<Insurance> getAcceptedInsurances() {
+        return acceptedInsurances;
+    }
+
+    public void setAcceptedInsurances(ArrayList<Insurance> acceptedInsurances) {
+        this.acceptedInsurances = acceptedInsurances;
+    }
+
+    public void printHospital(){
+        System.out.println("Hospital: "+
+                "\nHospitalname='"+ hospitalName+'\''+
+                "Address= "+ address.toString());
+    }
+    public void printDoctor(){
+        for(Doctor d: doctors){
+            System.out.println("\nDoctors= "+d);
+        }
+    }
+    public void printRooms(){
+        for(Integer d: rooms.keySet()){
+            System.out.println(d);
+        }
+    }
+    public void printInsurance(){
+        for(Insurance i: acceptedInsurances);{
+            System.out.println(i);
+        }
+    }
+
+
+
+//    @Override
+//    public String toString() {
+//        return "\nHospital" +
+//                "\nhospitalName='" + hospitalName + '\'' +
+//                "\naddress=" + address +
+//                "\ndoctors=" + doctors +
+//                "\nrooms=" + rooms +
+//                "\nacceptedInsurances=" + acceptedInsurances +
+//                "\n*************************************************************";
+//    }
 }
