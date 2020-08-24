@@ -1,8 +1,11 @@
 package work14;
 
 public enum Colors {
-    GREEN,ORANGE,
+    GREEN,
+    ORANGE,
     YELLOW,
     BROWN,
     RED,
+    GREY,
+    PINK
 }

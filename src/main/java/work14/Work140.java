@@ -1,9 +1,6 @@
 package work14;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Work140 {
     public static void main(String[] args) {
@@ -13,6 +10,8 @@ public class Work140 {
         map.put("Ireland", "Dublin");
         map.put("USA", "Washington");
         System.out.println(map);
+
+        System.out.println(map.get("USA"));
 
         map.put("Germany", "Bonn");
         System.out.println(map);
@@ -25,6 +24,7 @@ public class Work140 {
         fruits.put("Apple", Colors.GREEN);
         fruits.put("Orange", Colors.ORANGE);
         fruits.put("Peach", Colors.RED);
+
         System.out.println(fruits.size());
 
         for (String v : fruits.keySet()) {
@@ -39,6 +39,10 @@ public class Work140 {
             System.out.println(set.getValue());
 
             Map<Integer, Character> map1 = new HashMap<>();
+            Map<String,Person> peopleMap = new HashMap<>();
+            peopleMap.put("Jake", new Person("Jake Dowson", 1989));
+
+            Map<String, List<Person>> xx = new HashMap<>();
 
 
         }
