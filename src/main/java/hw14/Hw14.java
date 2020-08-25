@@ -7,7 +7,7 @@ import java.util.List;
 public class Hw14 {
 
     public static void main(String[] args) {
-        List<Doctor> listDoctors = new ArrayList<>();
+        ArrayList<Doctor> listDoctors = new ArrayList<>();
         Doctor James = new Doctor("James","Jameson",Position.CARDIOLOGIST);
         Doctor Ivan = new Doctor("Ivan","Ivanov",Position.DERMATOLOGIST);
         Doctor Susan = new Doctor("Susan","Simpson",Position.PEDIATRIC);
@@ -21,13 +21,13 @@ public class Hw14 {
         listDoctors.add(Lukas);
 
         HashMap<Integer,Position> rooms = new HashMap<>();
-        rooms.put(1,Position.SURGEON);
-        rooms.put(2,Position.PHYSICIAN);
-        rooms.put(3,Position.PEDIATRIC);
-        rooms.put(4,Position.DERMATOLOGIST);
-        rooms.put(5,Position.CARDIOLOGIST);
+        rooms.put(101,Position.SURGEON);
+        rooms.put(232,Position.PHYSICIAN);
+        rooms.put(314,Position.PEDIATRIC);
+        rooms.put(254,Position.DERMATOLOGIST);
+        rooms.put(365,Position.CARDIOLOGIST);
 
-        List<Insurance> listInsurance = new ArrayList<>();
+        ArrayList<Insurance> listInsurance = new ArrayList<>();
         listInsurance.add(Insurance.ANTHEM);
         listInsurance.add(Insurance.CVS);
         listInsurance.add(Insurance.HUMANA);
@@ -37,6 +37,11 @@ public class Hw14 {
         Address address = new Address("2545 Hollow str","Washington","DC",5412);
 
         Hospital hospital = new Hospital("St Jones",address,listDoctors,rooms,listInsurance);
+        Hospital.printHospital();
+        Hospital.printInsurance();
+        Hospital.printDoctor();
+        Hospital.printRooms();
+
 
 
 

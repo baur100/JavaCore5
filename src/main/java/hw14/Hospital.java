@@ -3,13 +3,14 @@ package hw14;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Hospital {
-    private String hospitalName;
-    private Address address;
-    private ArrayList<Doctor> doctors;
-    private HashMap<Integer,Position> rooms;
-    private ArrayList<Insurance> acceptedInsurances;
+    private static String hospitalName;
+    private static Address address;
+    private static ArrayList<Doctor> doctors;
+    private static HashMap<Integer,Position> rooms;
+    private static ArrayList<Insurance> acceptedInsurances;
 
     public Hospital(String hospitalName, Address address, ArrayList<Doctor> doctors, HashMap<Integer, Position> rooms, ArrayList<Insurance> acceptedInsurances) {
         this.hospitalName = hospitalName;
@@ -62,24 +63,24 @@ public class Hospital {
         this.acceptedInsurances = acceptedInsurances;
     }
 
-    public void printHospital(){
+    public static void printHospital(){
         System.out.println("Hospital: "+
                 "\nHospitalname='"+ hospitalName+'\''+
                 "Address= "+ address.toString());
     }
-    public void printDoctor(){
+    public static void printDoctor(){
         for(Doctor d: doctors){
             System.out.println("\nDoctors= "+d);
         }
     }
-    public void printRooms(){
-        for(Integer d: rooms.keySet()){
-            System.out.println(d);
+    public static void printRooms(){
+        for(Map.Entry<Integer,Position> entry: rooms.entrySet()){
+            System.out.println(entry.getKey() +" "+ entry.getValue());
         }
     }
-    public void printInsurance(){
+    public static void printInsurance(){
         for(Insurance i: acceptedInsurances);{
-            System.out.println(i);
+            System.out.println(acceptedInsurances);
         }
     }
 
