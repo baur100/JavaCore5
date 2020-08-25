@@ -9,14 +9,21 @@ public class App {
         anna.setYearOfBirth(1971);
 
 //        System.out.println(studentAddress);
-        System.out.println(anna);
+//        System.out.println(anna);
 
         Address teacherAddress = new Address("apt 1212, Building 5", "Hanna st", "Trenton","NJ",20220);
 
-
-        Teacher mrJones = new Teacher("Steven","Jones",teacherAddress,-1985,Subjects.MATH);
+        Teacher mrJones = new Teacher("Steven","Jones",teacherAddress,1985,Subjects.MATH);
 
         anna.sayHello();
         mrJones.sayHello();
+        anna.printStudent();
+
+        Person p1 = anna;
+        Person p2 = mrJones;
+
+        Person p[] = {p2,anna};
+
+//        Student xx = new Person("Steven","Jones",teacherAddress,1985);
     }
 }
