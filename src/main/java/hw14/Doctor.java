@@ -54,7 +54,8 @@ public class Doctor {
                 ", lastName='" + lastName + '\'' +
                 ", position=" + position +
                 '}');
-        for (Position p: position){
+        for (Position p : position) {
             System.out.println(p);
+        }
     }
 }

@@ -4,14 +4,16 @@ import javax.print.Doc;
 import java.lang.annotation.Documented;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class Hospital {
     public static void main(String[] args) {
-        private String hospitalName;
-        private ArrayList<Doctor> doctors;
+        String hospitalName;
+        private List<Doctor> doctors;
 
-        HashMap<Integer, Position> rooms = new HashMap<>();
+        private Map<Integer, Position> rooms;
         rooms.put(21,Position.CARDIOLOGIST);
         rooms.put(11,Position.SURGEON);
         rooms.put(31,Position.ONCOLOGIST);
@@ -20,7 +22,7 @@ public class Hospital {
 
                 
 
-        ArrayList<InsuranseCompanies> acceptedInsurances = new ArrayList<>();
+        private List<InsuranseCompanies> acceptedInsurances;
         acceptedInsurances.add(InsuranseCompanies.Metlife);
         acceptedInsurances.add(InsuranseCompanies.AETNA);
 
