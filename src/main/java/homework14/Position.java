@@ -1,0 +1,15 @@
+package homework14;
+
+public enum Position {
+    CARDIOLOGIST,
+    ALLERGIST,
+    DERMATOLOGIST,
+    PHYSICIAN,
+    NEUROLOGIST,
+    ONCOLOGIST,
+    OPHTHALMOLOGIST,
+    PEDIATRICIANS,
+    PHYSIATRISTS,
+    RADIOLOGIST,
+    DENTIST
+}
