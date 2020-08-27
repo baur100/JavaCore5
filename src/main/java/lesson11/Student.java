@@ -40,4 +40,14 @@ public class Student extends Person{
                 ", major=" + major +
                 '}';
     }
+    public void printStudent() {
+        System.out.println("+++Student{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address=" + address +
+                ", subjects=" + Arrays.toString(subjects) +
+                ", yearOfBirth=" + yearOfBirth +
+                ", major=" + major +
+                '}');
+    }
 }
