@@ -39,12 +39,11 @@ public class Radio extends Dashboard {
     }
 
     public String toString() {
-        return "Radio{" +
-                "stations=" + Arrays.toString(stations) +
-                ", louder='" + louder + '\'' +
-                ", quieter='" + quieter + '\'' +
-                ", on='" + on + '\'' +
-                ", off='" + off + '\'' +
-                '}';
+        return "Radio:" +
+                "\nstations = " + Arrays.toString(stations) +
+                "\n" + louder +
+                "\n" + quieter +
+                "\n" + on +
+                "\n" + off;
     }
 }

@@ -9,7 +9,6 @@ public class Home {
         Climate clim = new Climate("Turn ON the climate system", "Turn OFF the climate system", "Temperature raised", "Temperature lowered");
         Radio rad = new Radio("Turn ON the radio", "Turn OFF the radio", stations, "...sound lowered", "...sound increase");
 
-
         System.out.println(kia.getStartEngine());
         System.out.println(kia.on);
         System.out.println(dash.getOn());
@@ -20,7 +19,14 @@ public class Home {
         System.out.println(rad.getLouder());
         System.out.println(dash.getOff());
         System.out.println(kia.getOff());
-
+        System.out.println("------------------------");
+        System.out.println(kia.toString());
+        System.out.println("*************************************");
+        System.out.println(clim.toString());
+        System.out.println("*************************************");
+        System.out.println(dash.toString());
+        System.out.println("*************************************");
+        System.out.println(rad.toString());
 
     }
 }

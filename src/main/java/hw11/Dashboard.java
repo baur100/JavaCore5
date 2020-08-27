@@ -26,9 +26,8 @@ public class Dashboard {
     }
 
     public String toString() {
-        return "Dashboard{" +
-                "on='" + on + '\'' +
-                ", off='" + off + '\'' +
-                '}';
+        return "\nDashboard: " +
+                "\n" + on +
+                "\n" + off;
     }
 }

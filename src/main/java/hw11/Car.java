@@ -56,16 +56,15 @@ public class Car extends Dashboard {
         this.startEngine = startEngine;
     }
 
-    @Override
     public String toString() {
-        return "Car{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
-                ", color='" + color + '\'' +
-                ", startEngine='" + startEngine + '\'' +
-                ", on='" + on + '\'' +
-                ", off='" + off + '\'' +
-                '}';
+        return "Car:" +
+                "\nMake = " + make +
+                "\nModel = " + model +
+                "\nYear = " + year +
+                "\nColor = " + color +
+                "\n------------------------" +
+                "\n" + startEngine +
+                "\n" + on +
+                "\n" + off;
     }
 }

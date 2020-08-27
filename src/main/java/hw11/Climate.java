@@ -28,12 +28,11 @@ public class Climate extends Dashboard {
     }
 
     public String toString() {
-        return "Climate{" +
-                "raiseTemp='" + raiseTemp + '\'' +
-                ", lowTemp='" + lowTemp + '\'' +
-                ", on='" + on + '\'' +
-                ", off='" + off + '\'' +
-                '}';
+        return "Climate: " +
+                "\n" + raiseTemp +
+                "\n" + lowTemp +
+                "\n" + on +
+                "\n" + off;
     }
 }
 
