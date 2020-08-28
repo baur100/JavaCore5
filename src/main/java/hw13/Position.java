@@ -5,7 +5,6 @@ public enum Position {
     SURGEON,
     CARDIOLOGIST,
     DERMATOLOGIST,
-    PULMONOLOGIST,
-    ONCOLOGIST
+    PULMONOLOGIST
 
 }
