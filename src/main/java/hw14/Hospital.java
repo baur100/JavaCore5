@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
-public class Hospital {
-    public static void main(String[] args) {
-        String hospitalName;
-         List<Doctor> doctors;
+//public class Hospital {
+//    public static void main(String[] args) {
+//        String hospitalName;
+//         List<Doctor> doctors;
 
 //        private Map<Integer, Position> rooms;
 //        rooms.put(21,Position.CARDIOLOGIST);
@@ -29,13 +29,13 @@ public class Hospital {
 //        acceptedInsurances.forEach(x-> System.out.println(x));
 
 
-        Doctor house = new Doctor("Gregory", "Hose", Position.THERAPIST);
-        Doctor wilson =  new Doctor("James", "Wilson", Position.ONCOLOGIST);
-        Doctor chaise = new Doctor("Robert", "Chaise", Position.SURGEON);
-        Doctor foreman = new Doctor("Eric", "Foreman", Position.NEUROLOGIST);
-        Doctor taub = new Doctor("Kris", "Taub", Position.SURGEON);
-
-
-    }
-
-}
+//        Doctor house = new Doctor("Gregory", "Hose", Position.THERAPIST);
+//        Doctor wilson =  new Doctor("James", "Wilson", Position.ONCOLOGIST);
+//        Doctor chaise = new Doctor("Robert", "Chaise", Position.SURGEON);
+//        Doctor foreman = new Doctor("Eric", "Foreman", Position.NEUROLOGIST);
+//        Doctor taub = new Doctor("Kris", "Taub", Position.SURGEON);
+//
+//
+//    }
+//
+//}
