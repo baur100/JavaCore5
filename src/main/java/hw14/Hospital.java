@@ -11,22 +11,22 @@ import java.util.concurrent.atomic.AtomicReference;
 public class Hospital {
     public static void main(String[] args) {
         String hospitalName;
-        private List<Doctor> doctors;
+         List<Doctor> doctors;
 
-        private Map<Integer, Position> rooms;
-        rooms.put(21,Position.CARDIOLOGIST);
-        rooms.put(11,Position.SURGEON);
-        rooms.put(31,Position.ONCOLOGIST);
-        rooms.put(41,Position.PEDIATRICIAN);
-        rooms.put(01,Position.THERAPIST);
+//        private Map<Integer, Position> rooms;
+//        rooms.put(21,Position.CARDIOLOGIST);
+//        rooms.put(11,Position.SURGEON);
+//        rooms.put(31,Position.ONCOLOGIST);
+//        rooms.put(41,Position.PEDIATRICIAN);
+//        rooms.put(01,Position.THERAPIST);
 
                 
 
-        private List<InsuranseCompanies> acceptedInsurances;
-        acceptedInsurances.add(InsuranseCompanies.Metlife);
-        acceptedInsurances.add(InsuranseCompanies.AETNA);
-
-        acceptedInsurances.forEach(x-> System.out.println(x));
+//        private List<InsuranseCompanies> acceptedInsurances;
+//        acceptedInsurances.add(InsuranseCompanies.Metlife);
+//        acceptedInsurances.add(InsuranseCompanies.AETNA);
+//
+//        acceptedInsurances.forEach(x-> System.out.println(x));
 
 
         Doctor house = new Doctor("Gregory", "Hose", Position.THERAPIST);
