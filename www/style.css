@@ -1,0 +1,15 @@
+h1{
+color:red;
+background-color:yellow;
+}
+.super{
+font-weight:800;
+color:blue;
+}
+#jowl{
+color:rgba(255,0,0,0.8);
+font-size:15pt
+}
+.mini{
+border-style: dotted;
+}

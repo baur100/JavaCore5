@@ -2,7 +2,7 @@ package work16;
 
 public class work161 {
     public static void main(String[] args) {
-        Person ivan;
+        Person ivan = new Person();
         try {
 
             ivan = new Person("Ivan Pestov", 5);
