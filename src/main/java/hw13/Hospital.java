@@ -5,12 +5,14 @@ import java.util.Map;
 
 public class Hospital {
     private String hospitalName;
+    private Address hospitalAddress;
     private List<Doctor> doctor;
     private Map<Integer, String> rooms;
     private List<InsuranceCompanies> acceptedInsurances;
 
-    public Hospital(String hospitalName, List<Doctor> doctor, Map<Integer, String> rooms, List<InsuranceCompanies> acceptedInsurances) {
+    public Hospital(String hospitalName, Address hospitalAddress, List<Doctor> doctor, Map<Integer, String> rooms, List<InsuranceCompanies> acceptedInsurances) {
         this.hospitalName = hospitalName;
+        this.hospitalAddress = hospitalAddress;
         this.doctor = doctor;
         this.rooms = rooms;
         this.acceptedInsurances = acceptedInsurances;
@@ -18,6 +20,7 @@ public class Hospital {
 
     public void printDoctor() {
         for (Doctor d : doctor) {
+            System.out.println(d);
 
         }
     }
@@ -34,11 +37,18 @@ public class Hospital {
         }
     }
 
-    public String printHospital() {
-        return "Hospital" +
-                "hospitalName" + hospitalName +
-                "rooms" + rooms +
-                "acceptedInsurances" + acceptedInsurances;
+    public void printHospital() {
+        System.out.println("\nHospital - " + hospitalName);
+        System.out.println("______________________________________________");
+        System.out.println("Doctors of Hospital:");
+        printDoctor();
+        System.out.println("______________________________________________");
+        System.out.println("List of Doctors' Offices:");
+        printRooms();
+        System.out.println("______________________________________________");
+        System.out.println("Accepted Insurance Companies:");
+        printInsuranceCompanies();
+
     }
 }
 
