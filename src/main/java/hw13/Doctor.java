@@ -14,9 +14,8 @@ public class Doctor {
     }
 
     public String toString() {
-        return "Doctor: " + "\n" +
-                name + " " + lastName +
-                ", " + position + ".";
+        return name + " " + lastName +
+                ", " + position;
     }
 }
 

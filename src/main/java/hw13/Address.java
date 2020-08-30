@@ -14,7 +14,7 @@ public class Address {
     }
 
     public String toString() {
-        return "\nAddress: " +
+        return "Address: " +
                 "\n" + streetAddress + ", " +
                 town +
                 ", " + state +

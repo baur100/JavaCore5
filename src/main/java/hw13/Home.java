@@ -7,36 +7,43 @@ import java.util.Map;
 
 public class Home {
     public static void main(String[] args) {
-
-//        Hospital ns = new Hospital ("NorthShore",Address., Doctor,233,"");
-
+        System.out.println("'North Shore Hospital'");
         Address hospitalAddress = new Address("993 North Sheridan Rd", "Chicago", "Illinois", 60622);
-        hospitalAddress.toString();
-        Map <Integer, String> room = new HashMap<>(); {
-
+        System.out.println(hospitalAddress);
+        System.out.println("____________________________________________________________");
+//        -Doctor-
+        List<Doctor> doctors = new ArrayList<>();
+        doctors.add(new Doctor("Alex", "Nixon", Position.CARDIOLOGIST));
+        doctors.add(new Doctor("Stephen", "Douglas", Position.PEDIATRICIAN));
+        doctors.add(new Doctor("Dilan", "Brinn", Position.DERMATOLOGIST));
+        doctors.add(new Doctor("Karen", "Miller", Position.PULMONOLOGIST));
+        doctors.add(new Doctor("Ann", "Schneider", Position.SURGEON));
+        System.out.println("Doctors of Hospital:");
+        doctors.forEach(d -> System.out.println(d));
+        System.out.println("____________________________________________________________");
+//        -Room-
+        Map<Integer, String> rooms = new HashMap<>();
+        rooms.put(101, "Cardiology");
+        rooms.put(102, "Oncology");
+        rooms.put(103, "Pediatrics");
+        rooms.put(104, "Pulmonology");
+        rooms.put(105, "Surgeon");
+        System.out.println("List of Doctors' Offices:");
+        for (Map.Entry<Integer, String> entry : rooms.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
         }
-
-        List<Doctor> d1 = new ArrayList<Doctor>();
-
-//        Doctor d1 = new Doctor("Alex", "Nixon", Position.CARDIOLOGIST);
-//        Doctor d2 = new Doctor("Stephen", "Douglas", Position.PEDIATRICIAN);
-//        Doctor d3 = new Doctor("Dilan", "Brinn", Position.DERMATOLOGIST);
-//        Doctor d4 = new Doctor("Karen", "Miller", Position.PULMONOLOGIST);
-//        Doctor d5 = new Doctor("Ann", "Schneider", Position.SURGEON);
-//        System.out.println(d1.toString());
-
-
-        System.out.println();
-
-//        Map<Integer, String> rooms = new Map<>();
-//        rooms.put(101, "Cardiology");
-//        rooms.put(102, "Oncology");
-//        rooms.put(103, "Pediatrics");
-//        rooms.put(104, "Pulmonology");
-//        rooms.put(105, "Surgeon");
-//        System.out.println(rooms);
-//        System.out.println(rooms.size());
-
+        System.out.println("____________________________________________________________");
+//        -Insurance-
+        List<InsuranceCompanies> insurance = new ArrayList<>();
+        insurance.add(InsuranceCompanies.WELLCARE);
+        insurance.add(InsuranceCompanies.ANTHEM_INC);
+        insurance.add(InsuranceCompanies.BLUE_CROSS_BLUE_SHIELD);
+        insurance.add(InsuranceCompanies.HUMANA);
+        insurance.add(InsuranceCompanies.KAISER_FOUNDATION);
+        insurance.add(InsuranceCompanies.UNITED_HEALTH);
+        System.out.println("Accepted Insurance Companies:");
+        insurance.forEach(i -> System.out.println(i));
 
     }
 }
+
