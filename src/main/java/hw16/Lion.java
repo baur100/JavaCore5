@@ -36,6 +36,32 @@ public class Lion extends Carnivores {
         this.population = population;
 
     }
+
+
+
+    @Override
+    public void breathe() {
+        System.out.println("Wolf can breathe.");
+
+    }
+
+    @Override
+    public void multiply() {
+        System.out.println("One male can have offspring from different lionesses.");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Lion can eat the meat of other animals.");
+
+    }
+
+    @Override
+    public void die() {
+        System.out.println("Poachers in large numbers exterminate prides of lions.");
+
+    }
+
     @Override
     public void mammals() {
         System.out.println("We are the kings of the animal kingdom!");

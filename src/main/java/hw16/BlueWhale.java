@@ -35,6 +35,31 @@ public class BlueWhale extends Carnivores {
         this.population = population;
     }
 
+
+    @Override
+    public void breathe() {
+        System.out.println("Whales can breathe");
+
+    }
+
+    @Override
+    public void multiply() {
+        System.out.println("Whales are very careful when choosing a partner.");
+
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Whale can eat the plankton.");
+
+    }
+
+    @Override
+    public void die() {
+        System.out.println("The number of whales is inexorably declining.");
+
+    }
+
     @Override
     public void mammals() {
         System.out.println("We are place in the water.");

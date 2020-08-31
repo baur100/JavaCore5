@@ -29,6 +29,31 @@ public class Wolf extends Carnivores {
     public void setPopulation(int NewPopulation){
         this.population=NewPopulation;
     }
+
+    @Override
+    public void breathe() {
+        System.out.println("Wolf can breathe");
+
+    }
+
+    @Override
+    public void multiply() {
+        System.out.println("Breeding wolves create large flocks.");
+
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Wolf can eat the meat of rabbits.");
+
+    }
+
+    @Override
+    public void die() {
+        System.out.println("Unfortunately very often wolf die because guns of hunters.");
+
+    }
+
     @Override
     public void mammals() {
         System.out.println("We have 4 limbs!");

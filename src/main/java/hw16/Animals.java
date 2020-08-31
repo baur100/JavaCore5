@@ -1,5 +1,5 @@
 package hw16;
 
-public interface Animals {
+public interface Animals extends Life {
     void animals();
 }
