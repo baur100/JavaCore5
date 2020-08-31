@@ -1,4 +1,4 @@
-package lessons14;
+package lesson14;
 
 public class Tickets {
         private int price;

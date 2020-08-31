@@ -1,6 +1,6 @@
 package unitTest;
 
-import lessons14.Tickets;
+import lesson14.Tickets;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
