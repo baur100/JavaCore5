@@ -1,5 +1,5 @@
 package hw16;
 
-public interface Plants {
+public interface Plants extends Life{
     void plants();
 }
