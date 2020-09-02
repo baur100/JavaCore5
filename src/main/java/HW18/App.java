@@ -8,6 +8,8 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class App {
+
+
     public static void main(String[] args) {
 
 
@@ -57,6 +59,7 @@ public class App {
         System.out.println("Doctors' rooms and names");
         System.out.println(one+"\n"+two+"\n"+three+"\n"+four+"\n"+five);
 
+        System.out.println("1===========================");
 
 
         Address oneAddress = new Address("12 Bulton", "Cambrigdge","MA", 73806);
@@ -65,7 +68,14 @@ public class App {
         Hospital HelpFirst = new Hospital("HelpFirst",oneAddress, Doctorlist, roomsHelpFirst, acceptedInsuranses);
         Hospital HelpAlways = new Hospital("HelpAlways", twoAddress, DoctorlistSecond, roomsHelpAlways, acceptedInsuranses);
 
-        System.out.println(HelpFirst+"\n"+HelpAlways);
+
+        System.out.println(HelpFirst);
+        System.out.println(HelpAlways);
+
+        System.out.println("2===========================");
+        HelpAlways.printHospital();
+        System.out.println("3============================");
+        HelpFirst.printHospital();
 
 
     }
