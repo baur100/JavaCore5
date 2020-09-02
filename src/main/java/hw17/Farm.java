@@ -5,6 +5,7 @@ package hw17;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Farm {
     private String name;
@@ -50,13 +51,29 @@ public class Farm {
     public void setAgreeCultural(ArrayList<AgreeCultural> agreeCultural) {
         this.agreeCultural = agreeCultural;
     }
-    public void printInfo(){
-        System.out.println("Farm <" + name + ">" +
-                "\n Address: " + address +
-                "\n Cattle:" + cattle +
-                "\n AgreeCultural=" + agreeCultural +".");
+
+
+    public void printCattle() {
+        System.out.println("\n Cattle: ");
+        for (HashMap.Entry<Cattle, Integer> x : cattle.entrySet()) {
+            System.out.println("Type: " + x.getKey() + ". Amount:" + x.getValue());
+        }
     }
 
+        public void printAgreeCultural() {
+            System.out.println("\n AgreeCultural: ");
+            for(AgreeCultural x: agreeCultural){
+                System.out.println(x.toString());
+            }
+        }
+
+    public void printInfo(){
+        System.out.println("Farm <" + name + ">"+
+                "\n"+ address);
+                printCattle();
+                printAgreeCultural();
+
+    }
 
     }
 

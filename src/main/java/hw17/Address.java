@@ -6,12 +6,14 @@ public class Address {
     private String state;
     private int zip;
 
-    public Address(){}
-    public Address(String streetAddress, String town, String state, int zip){
-        this.streetAddress=streetAddress;
-        this.town=town;
-        this.state=state;
-        this.zip=zip;
+    public Address() {
+    }
+
+    public Address(String streetAddress, String town, String state, int zip) {
+        this.streetAddress = streetAddress;
+        this.town = town;
+        this.state = state;
+        this.zip = zip;
     }
 
     public String getStreetAddress() {
@@ -44,5 +46,12 @@ public class Address {
 
     public void setZip(int zip) {
         this.zip = zip;
+    }
+    public String toString(){
+       return "\n Address information:"+
+               "\n Address: " +streetAddress+
+               "\n Town: "+town+
+               "\n State: "+state+
+               "\n Zip-code: "+ zip+".";
     }
 }

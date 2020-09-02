@@ -28,7 +28,7 @@ public AgreeCultural(){}
 
     @Override
     public String toString() {
-        return  "\n Name of culture: " + nameOfCulture +
+        return  "Name of culture: " + nameOfCulture +
                 ", fields number: " + fieldsNumber;
     }
 }
