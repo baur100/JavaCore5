@@ -7,7 +7,7 @@ public interface Mammals extends Vertebrates {
 
 abstract class Carnivoes{
 
-    class Lion{
+   static class Lion{
 
         public void breath(){
             System.out.println("They can breath");
@@ -15,23 +15,46 @@ abstract class Carnivoes{
 
     }
 
-    class Wolf{
+    static class Wolf{
+
+
+        public void feed(){
+            System.out.println("I can feed");
+        }
 
     }
 
-    class BlueWhale{
+    static class BlueWhale{
+
+        public void reproduce(){
+            System.out.println("I can reproduce");
+        }
+
+
+
 
     }
 }
 
-abstract class Primates{}
+abstract class Primates{
 
-abstract class Seals{}
 
-abstract class Rodents{}
+}
 
-abstract class Whales{}
+abstract class Seals{
 
-abstract class Herbivores{}
+}
+
+abstract class Rodents{
+
+}
+
+abstract class Whales{
+
+}
+
+abstract class Herbivores{
+
+}
 
 
