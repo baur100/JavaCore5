@@ -79,8 +79,8 @@ public class Hospital {
         }
     }
     public static void printInsurance(){
-        for(Insurance i: acceptedInsurances);{
-            System.out.println(acceptedInsurances);
+        for(Insurance i : acceptedInsurances){
+            System.out.println(i);
         }
     }
 
