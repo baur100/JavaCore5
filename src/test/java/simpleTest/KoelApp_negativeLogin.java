@@ -18,15 +18,14 @@ public class KoelApp_negativeLogin {
     public void beforeEveryTest() {
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver();
-        //************************
         fluentWait = new FluentWait<WebDriver>(driver)
                 .withTimeout(Duration.ofSeconds(20))
                 .pollingEvery(Duration.ofMillis(10))
                 .ignoring(ElementNotVisibleException.class)
                 .ignoring(NoSuchElementException.class);
-        //************************
         driver.get("https://koelapp.testpro.io/");
     }
+
     @AfterMethod
     public void teatDown() throws InterruptedException {
         Thread.sleep(5000);
@@ -35,8 +34,8 @@ public class KoelApp_negativeLogin {
 
     @Test
 
-    public void loginKoel(){
-        fluentWait.until(x->x.findElement(By.cssSelector("[type='email']")));
+    public void loginKoelApp_NegativeTest() {
+        fluentWait.until(x -> x.findElement(By.cssSelector("[type='email']")));
         WebElement emailAddress = driver.findElement(By.cssSelector("[type='email']"));
         WebElement password = driver.findElement(By.cssSelector("[type='password']"));
         WebElement logInButton = driver.findElement(By.cssSelector("[type='submit']"));
@@ -44,7 +43,7 @@ public class KoelApp_negativeLogin {
         password.sendKeys("te$t$tuden");
         logInButton.click();
 
-        fluentWait.until(x->x.findElement(By.cssSelector(".error")));
+        fluentWait.until(x -> x.findElement(By.cssSelector(".error")));
         WebElement error = driver.findElement(By.cssSelector(".error"));
         Assert.assertTrue(error.isDisplayed());
     }
