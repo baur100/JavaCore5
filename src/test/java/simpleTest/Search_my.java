@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Search {
+public class Search_my {
     @Test
     public void searchJavaInGoogle_ResultReturned()  {
 
