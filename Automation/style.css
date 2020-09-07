@@ -1,0 +1,19 @@
+h1 {
+color : red;
+background-color: orange;
+}
+h2 {
+font-family: arial;
+}
+.super{
+color: orange;
+font-weight: 800;
+}
+.super1{
+background-color: grey;
+}
+#bbb{
+color: rgb(300,0,0,30);
+font-family: arial;
+font-weight: 800;
+}
