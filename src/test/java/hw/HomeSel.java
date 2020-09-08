@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class HomeSell {
+public class HomeSel {
     private WebDriver driver;
     private WebDriverWait wait;
     private FluentWait<WebDriver> fluentWait;
@@ -35,7 +35,7 @@ public class HomeSell {
         driver.quit();
     }
     @Test
-    public void loginPassword(){
+    public void login_To_KoellApp_Negative_test(){
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[type='email']")));
         WebElement email = driver.findElement(By.cssSelector("[type='email']"));
         WebElement password = driver.findElement(By.cssSelector("[type='password']"));
