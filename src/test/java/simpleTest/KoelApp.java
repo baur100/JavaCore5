@@ -61,4 +61,18 @@ public class KoelApp {
 //        }
 //************************************************************
     }
+    @Test
+    public void wrongCredentials(){
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[type='email']")));
+        WebElement email = driver.findElement(By.cssSelector("[type='email']"));
+        WebElement password = driver.findElement(By.cssSelector("[type='password']"));
+        WebElement loginButton = driver.findElement(By.tagName("button"));
+
+        email.sendKeys("koeluser06@testpro.io");
+        password.sendKeys("=======");
+        loginButton.click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".error")));
+        Assert.assertTrue(driver.findElement(By.cssSelector(".error")).isDisplayed());
+    }
 }
