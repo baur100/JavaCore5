@@ -30,7 +30,7 @@ public class newListTest {
         myDriver.quit();
     }
     @Test
-    public void loginTest(){
+    public void createNewList(){
         HWloginPageObjects loginPage=new HWloginPageObjects(myDriver);
         loginPage.open();
         HWmainPageObjects mainPage= loginPage.logIn("koeluser05@testpro.io","te$t$tudent");
