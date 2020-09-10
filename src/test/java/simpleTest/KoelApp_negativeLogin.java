@@ -46,6 +46,9 @@ public class KoelApp_negativeLogin {
         fluentWait.until(x -> x.findElement(By.cssSelector(".error")));
         WebElement error = driver.findElement(By.cssSelector(".error"));
         Assert.assertTrue(error.isDisplayed());
+
+//        2-nd decision:
+//        Assert.assertTrue(driver.findElement(By.cssSelector(".error")).isDisplayed());
     }
 
 
