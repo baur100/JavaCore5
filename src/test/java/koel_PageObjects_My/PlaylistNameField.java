@@ -18,7 +18,7 @@ public class PlaylistNameField extends BasePage {
         playlistNameField.clear();
         playlistNameField.sendKeys(playlist_name);
         playlistNameField.sendKeys(Keys.ENTER);
-        fluentWait.until(x -> x.findElement(By.xpath("//*[@id='playlistWrapper']/h1/span")));
+        fluentWait.until(x -> x.findElement(By.xpath("//*[contains(span,'BestSong')]")));
 
     }
 }

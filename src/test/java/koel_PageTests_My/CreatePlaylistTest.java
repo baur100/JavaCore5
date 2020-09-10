@@ -39,7 +39,7 @@ public class CreatePlaylistTest {
         plusButton.clickOn();
         PlaylistNameField playlistNameField = new PlaylistNameField(driver);
         playlistNameField.createPlaylist("BestSong");
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='playlistWrapper']/h1/span")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//*[contains(span,'BestSong')]")).isDisplayed());
 
 
     }
