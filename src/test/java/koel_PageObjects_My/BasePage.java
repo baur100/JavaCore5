@@ -22,6 +22,7 @@ public class BasePage {
                 .ignoring(NoSuchWindowException.class)
                 .ignoring(TimeoutException.class);
 
+
         wait = new WebDriverWait(driver, 20);
     }
 }
