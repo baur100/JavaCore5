@@ -1,5 +1,6 @@
 package pageTests;
 
+import helper.TestDataGenerator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -10,7 +11,7 @@ import pageObjects.LoginPage;
 import pageObjects.MainPage;
 
 
-public class LoginTests {
+public class PlaylistTest {
     private WebDriver driver;
 
     @BeforeMethod
@@ -25,17 +26,23 @@ public class LoginTests {
         driver.quit();
     }
     @Test
-    public void loginTest(){
+    public void createPlaylistTest(){
+        String name = TestDataGenerator.randomString(8);
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","te$t$tudent");
-        Assert.assertTrue(mainPage.isLogoutButton());
+        String playlistId = mainPage.createPlaylist(name);
+        Assert.assertTrue(mainPage.isPlaylistExist(playlistId));
     }
     @Test
-    public void wrongLoginTest(){
+    public void renamePlaylistTest(){
+        String name = TestDataGenerator.randomString(8);
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","88888888");
-        Assert.assertFalse(mainPage.isLogoutButton());
+        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","te$t$tudent");
+        String playlistId = mainPage.createPlaylist(name);
+
+        String newName = TestDataGenerator.randomString(8);
+        mainPage.renamePlaylist(playlistId, newName);
     }
 }
