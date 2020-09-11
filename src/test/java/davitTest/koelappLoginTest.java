@@ -47,11 +47,11 @@ public class koelappLoginTest {
         password.sendKeys("student");
         loginButton.click();
 
-        //wait.until(ExpectedConditions.elementToBeSelected(By.cssSelector("[class='error']")));
+        wait.until(ExpectedConditions.elementToBeSelected(By.xpath("//*[@class='error']")));
 
-        WebElement loginError = driver.findElement(By.cssSelector("[class='error']"));
+        WebElement loginError = driver.findElement(By.xpath("//*[@class='error']"));
 
-        Assert.assertFalse(loginError.isSelected());
+        Assert.assertFalse(loginError.isDisplayed());
 
     }
 }
