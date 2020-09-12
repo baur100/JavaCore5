@@ -37,13 +37,13 @@ public class PlaylistTest_my {
         loginPage.open();
         MainPage_my mainPage = loginPage.logIn("koeluser06@testpro.io", "te$t$tudent");
         String playlistId = mainPage.createPlaylist(name);
-        Assert.assertTrue(mainPage.isPlaylistExist(playlistId));
+//        Assert.assertTrue(mainPage.isPlaylistExist(playlistId));
 
     }
 
     @Test
 
-    public void renamePlaylistTest() throws InterruptedException {
+    public void renamePlaylistTest() {
         String name = TestDataGenerator_my.randomString(8);
         LoginPage_my loginPage = new LoginPage_my(driver);
         loginPage.open();
@@ -51,7 +51,7 @@ public class PlaylistTest_my {
         String playlistId = mainPage.createPlaylist(name);
         String newName = TestDataGenerator_my.randomString(8);
         mainPage.renamePlaylist(playlistId, newName);
-        Assert.assertTrue(mainPage.isPlaylistExist(playlistId));
+        Assert.assertTrue(mainPage.isPlaylistExist(playlistId, newName));
 
     }
 }
