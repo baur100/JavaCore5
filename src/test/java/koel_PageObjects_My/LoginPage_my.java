@@ -25,7 +25,7 @@ public class LoginPage_my extends BasePage_my {
         driver.get("https://koelapp.testpro.io/");
     }
 
-    public MainPage_my logIn(String email, String passwort) throws InterruptedException {
+    public MainPage_my logIn(String email, String passwort) {
         getEmail().sendKeys(email);
         getPassword().sendKeys(passwort);
         getLogInButton().click();

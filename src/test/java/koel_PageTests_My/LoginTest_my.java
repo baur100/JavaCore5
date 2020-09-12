@@ -28,7 +28,7 @@ public class LoginTest_my {
 
     @Test
 
-    public void loginTest() throws InterruptedException {
+    public void loginTest() {
         LoginPage_my loginPage = new LoginPage_my(driver);
         loginPage.open();
         MainPage_my mainPage = loginPage.logIn("koeluser06@testpro.io","te$t$tudent");
