@@ -1,7 +1,7 @@
 package koel_PageTests_My;
 
 
-import koel_Helpers.TestDataGenerator_my;
+import koel_Helpers_my.TestDataGenerator_my;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
