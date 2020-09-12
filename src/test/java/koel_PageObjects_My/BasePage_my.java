@@ -6,15 +6,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class BasePage {
+public class BasePage_my {
     protected WebDriver driver;
     protected FluentWait<WebDriver> fluentWait;
     protected WebDriverWait wait;
 
-    public BasePage(WebDriver driver) {
+    public BasePage_my(WebDriver driver) {
         this.driver = driver;
         fluentWait = new FluentWait<WebDriver>(driver)
-                .withTimeout(Duration.ofSeconds(20))
+                .withTimeout(Duration.ofSeconds(30))
                 .pollingEvery(Duration.ofMillis(5))
                 .ignoring(ElementClickInterceptedException.class)
                 .ignoring(ElementNotVisibleException.class)
@@ -23,6 +23,6 @@ public class BasePage {
                 .ignoring(TimeoutException.class);
 
 
-        wait = new WebDriverWait(driver, 20);
+        wait = new WebDriverWait(driver, 30);
     }
 }

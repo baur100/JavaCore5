@@ -1,13 +1,13 @@
-//package pageObjects;
-//
-//import org.openqa.selenium.NoSuchElementException;
-//import org.openqa.selenium.StaleElementReferenceException;
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.support.ui.FluentWait;
-//import org.openqa.selenium.support.ui.WebDriverWait;
-//
-//import java.time.Duration;
-//
+package pageObjects;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
 //public class BasePage {
 //    protected WebDriver driver;
 //    protected WebDriverWait wait;

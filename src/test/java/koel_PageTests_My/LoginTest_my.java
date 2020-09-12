@@ -6,11 +6,11 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import koel_PageObjects_My.LoginPage;
-import koel_PageObjects_My.MainPage;
+import koel_PageObjects_My.LoginPage_my;
+import koel_PageObjects_My.MainPage_my;
 
 
-public class LoginTest {
+public class LoginTest_my {
     private WebDriver driver;
 
 
@@ -29,9 +29,9 @@ public class LoginTest {
     @Test
 
     public void loginTest() throws InterruptedException {
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage_my loginPage = new LoginPage_my(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","te$t$tudent");
+        MainPage_my mainPage = loginPage.logIn("koeluser06@testpro.io","te$t$tudent");
         Assert.assertTrue(mainPage.plusButton());
     }
 

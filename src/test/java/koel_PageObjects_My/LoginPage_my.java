@@ -2,9 +2,9 @@ package koel_PageObjects_My;
 
 import org.openqa.selenium.*;
 
-public class LoginPage extends BasePage {
+public class LoginPage_my extends BasePage_my {
 
-    public LoginPage(WebDriver driver) {
+    public LoginPage_my(WebDriver driver) {
         super(driver);
     }
 
@@ -25,11 +25,11 @@ public class LoginPage extends BasePage {
         driver.get("https://koelapp.testpro.io/");
     }
 
-    public MainPage logIn(String email, String passwort) throws InterruptedException {
+    public MainPage_my logIn(String email, String passwort) throws InterruptedException {
         getEmail().sendKeys(email);
         getPassword().sendKeys(passwort);
         getLogInButton().click();
-        return new MainPage(driver);
+        return new MainPage_my(driver);
 
     }
 }
