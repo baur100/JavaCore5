@@ -1,0 +1,19 @@
+h1  {
+    color: red;
+    background-color:green
+}
+h2 {
+    font-family: arial;
+}
+.super {
+    font-weight: 800;
+    color: blue;
+    background-color: pink;
+}
+#jowl {
+    color: rgba(255, 0, 0, 0.8);
+    font-size: 15pt;
+}
+.mini {
+  border-style: dotted;
+}
