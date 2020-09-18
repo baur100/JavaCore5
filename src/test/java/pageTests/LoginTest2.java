@@ -10,42 +10,42 @@ public class LoginTest2 extends BaseTest {
     public void loginTestx(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("kamilmaratovic@gmail.com","te$t$tudent");
+        MainPage mainPage = loginPage.logIn(username,password);
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test
     public void wrongLoginTestx(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","88888888");
+        MainPage mainPage = loginPage.logIn(username,"88888888");
         Assert.assertFalse(mainPage.isLogoutButton());
     }
     @Test
     public void loginTest1x(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("kamilmaratovic@gmail.com","te$t$tudent");
+        MainPage mainPage = loginPage.logIn(username,password);
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test
     public void wrongLoginTest1x(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","88888888");
+        MainPage mainPage = loginPage.logIn(username,"88888888");
         Assert.assertFalse(mainPage.isLogoutButton());
     }
     @Test
     public void loginTest2x(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("kamilmaratovic@gmail.com","te$t$tudent");
+        MainPage mainPage = loginPage.logIn(username,password);
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test
     public void wrongLoginTest2x(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","88888888");
+        MainPage mainPage = loginPage.logIn(username,"88888888");
         Assert.assertFalse(mainPage.isLogoutButton());
     }
 }

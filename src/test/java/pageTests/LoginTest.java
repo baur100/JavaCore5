@@ -10,7 +10,7 @@ public class LoginTest extends BaseTest {
     public void loginTest(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("kamilmaratovic@gmail.com","te$t$tudent");
+        MainPage mainPage = loginPage.logIn(username,password);
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test(enabled=false)
@@ -18,35 +18,35 @@ public class LoginTest extends BaseTest {
     public void wrongLoginTest(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","88888888");
+        MainPage mainPage = loginPage.logIn(username,"88888888");
         Assert.assertFalse(mainPage.isLogoutButton());
     }
     @Test
     public void loginTest1(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("kamilmaratovic@gmail.com","te$t$tudent");
+        MainPage mainPage = loginPage.logIn(username,password);
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test
     public void wrongLoginTest1(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","88888888");
+        MainPage mainPage = loginPage.logIn(username,"88888888");
         Assert.assertFalse(mainPage.isLogoutButton());
     }
     @Test
     public void loginTest2(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("kamilmaratovic@gmail.com","te$t$tudent");
+        MainPage mainPage = loginPage.logIn(username,password);
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test
     public void wrongLoginTest2(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn("koeluser06@testpro.io","88888888");
+        MainPage mainPage = loginPage.logIn(username,"88888888");
         Assert.assertFalse(mainPage.isLogoutButton());
     }
 }
