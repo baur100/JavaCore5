@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Master Suite" parallel="classes" thread-count="4">
+    <listeners>
+        <listener class-name="listeners.Listeners"/>
+    </listeners>
     <parameter name="username" value="koeluser06@testpro.io"/>
     <parameter name="password" value="te$t$tudent"/>
     <test name="All tests">
