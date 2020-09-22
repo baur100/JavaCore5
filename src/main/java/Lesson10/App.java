@@ -44,7 +44,7 @@ public class App {
         shopping.setBread("French bread");
         shopping.setButter("Salted butter");
         shopping.printGroceries();
-        
+
     }
 }
 
