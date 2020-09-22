@@ -13,16 +13,16 @@ public class BasePage_my {
 
     public BasePage_my(WebDriver driver) {
         this.driver = driver;
-        fluentWait = new FluentWait<WebDriver>(driver)
-                .withTimeout(Duration.ofSeconds(30))
-                .pollingEvery(Duration.ofMillis(5))
-                .ignoring(ElementClickInterceptedException.class)
-                .ignoring(ElementNotVisibleException.class)
-                .ignoring(NoSuchElementException.class)
-                .ignoring(NoSuchWindowException.class)
-                .ignoring(TimeoutException.class);
+        fluentWait = new FluentWait<>(driver);
+        fluentWait.withTimeout(Duration.ofSeconds(5));
+        fluentWait.pollingEvery(Duration.ofMillis(5));
+        fluentWait.ignoring(ElementClickInterceptedException.class);
+        fluentWait.ignoring(ElementNotVisibleException.class);
+        fluentWait.ignoring(NoSuchElementException.class);
+        fluentWait.ignoring(NoSuchWindowException.class);
+        fluentWait.ignoring(TimeoutException.class);
 
 
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait (driver, 5);
     }
 }

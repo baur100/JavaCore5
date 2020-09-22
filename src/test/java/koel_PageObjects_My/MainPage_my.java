@@ -34,6 +34,24 @@ public class MainPage_my extends BasePage_my {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='success show']")));
         return driver.getCurrentUrl().split("/")[5];
     }
+// With custom wait:
+
+//    public String createPlaylist(String name) {
+//    *********************************************************
+//        for(int i=0; i<20; i++){
+//            try{
+//                getPlusButton().click();
+//                break;
+//            } catch (ElementClickInterceptedException ignored){
+//
+//            }
+//        }
+//        *********************************************************
+//        getNewPlaylistField().sendKeys(name);
+//        getNewPlaylistField().sendKeys(Keys.ENTER);
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='success show']")));
+//        return driver.getCurrentUrl().split("/")[5];
+//    }
 
     public void renamePlaylist(String playlistId, String newName) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -44,14 +62,18 @@ public class MainPage_my extends BasePage_my {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='playlist playlist editing']/*[last()]")));
         WebElement inputField = driver.findElement(By.xpath("//*[@class='playlist playlist editing']/*[last()]"));
         actions.doubleClick(inputField).perform();
-//        inputField.sendKeys(Keys.BACK_SPACE);
         inputField.sendKeys(newName);
         inputField.sendKeys(Keys.ENTER);
     }
 
-    public boolean isPlaylistExist(String playlistId, String newName) {
+    public boolean isPlaylistExist1(String playlistId, String newName) {
         List<WebElement> list = driver.findElements(By.xpath("//*[@href='#!/playlist/" + playlistId + "']"));
         return list.size() > 0 && list.get(0).getText().equals(newName);
+    }
+
+    public boolean isPlaylistExist(String playlistId) {
+        List<WebElement> list = driver.findElements(By.xpath("//*[@href='#!/playlist/" + playlistId + "']"));
+        return list.size() > 0;
     }
 
 //    public boolean isPlaylistExist1(String playlistId, String newName){

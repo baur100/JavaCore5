@@ -11,7 +11,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void startUp() throws NoSuchMethodException {
-        driver = BrowserFabric.getDriver(BrowserType.EDGE);
+        driver = BrowserFabric.getDriver(BrowserType.FIREFOX);
     }
     @AfterMethod
     public void teatDown() throws InterruptedException {
