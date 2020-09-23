@@ -15,12 +15,19 @@ public class BaseTest {
     protected String password;
     int tt=0;
 
-    @Parameters({"username","password"})
+    @Parameters({"username","password","browser"})
     @BeforeMethod
-    public void startUp(String email, String password) throws NoSuchMethodException {
+    public void startUp(String email, String password, String browser) throws NoSuchMethodException {
         username = email;
         this.password=password;
-        driver = BrowserFabric.getDriver(BrowserType.CHROME);
+//        BrowserType browserType;
+//        if(browser.equals("Chrome")){
+//            browserType=BrowserType.CHROME;
+//        } else {
+//            browserType=BrowserType.FIREFOX;
+//        }
+        BrowserType browserType = browser.equals("Chrome") ? BrowserType.CHROME : BrowserType.FIREFOX;
+        driver = BrowserFabric.getDriver(browserType);
     }
     @AfterMethod
     public void tearDown(ITestResult iTestResult) throws InterruptedException {
