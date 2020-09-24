@@ -31,8 +31,9 @@ public class BrowserFabric {
 
     private static WebDriver getFirefoxDriver() {
         FirefoxOptions options = new FirefoxOptions();
-//        options.addArguments("--width=1400");
-//        options.addArguments("--height=1000");
+        options.addArguments("headless");
+        options.addArguments("--width=1400");
+        options.addArguments("--height=1000");
         System.setProperty("webdriver.gecko.driver", "geckodriver");
         return new FirefoxDriver(options);
     }

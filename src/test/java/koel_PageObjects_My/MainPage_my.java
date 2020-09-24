@@ -1,13 +1,17 @@
 package koel_PageObjects_My;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import pageObjects.MainPage;
 
 import java.util.List;
 
 public class MainPage_my extends BasePage_my {
+    private static Logger logger = LogManager.getLogger(MainPage_my.class);
 
     public MainPage_my(WebDriver driver) {
         super(driver);
@@ -28,8 +32,10 @@ public class MainPage_my extends BasePage_my {
     }
 
     public String createPlaylist(String name) {
+        logger.info("create playlist method started");
         getPlusButton().click();
         getNewPlaylistField().sendKeys(name);
+        logger.info("ENTER pressed");
         getNewPlaylistField().sendKeys(Keys.ENTER);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='success show']")));
         return driver.getCurrentUrl().split("/")[5];

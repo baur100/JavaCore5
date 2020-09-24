@@ -31,7 +31,7 @@ public class LoginTest_my1 extends BaseTest_my {
     public void loginTest22() {
         LoginPage_my loginPage = new LoginPage_my(driver);
         loginPage.open();
-        MainPage_my mainPage = loginPage.logIn(username,password);
+        MainPage_my mainPage = loginPage.logIn(username,password+"1");
         Assert.assertTrue(mainPage.plusButton());
     }
 
