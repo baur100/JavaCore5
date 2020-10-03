@@ -1,6 +1,8 @@
 package petStoreTestApi;
 
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import models.PetResponse;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,7 +20,14 @@ public class GetPet {
                 .statusCode(200)
                 .extract()
                 .response();
-        String body = response.asString();
-        Assert.assertTrue(body.contains("NutCracker"));
+        JsonPath body = response.jsonPath();
+        PetResponse hamster = body.getObject("$", PetResponse.class);
+
+        Assert.assertEquals(hamster.getName(),"NutCracker");
+        Assert.assertEquals(hamster.getStatus(),"available");
+        Assert.assertEquals(hamster.getId(),1000);
+        Assert.assertEquals(hamster.getCategory().getName(),"Hamsters");
+        Assert.assertEquals(hamster.getCategory().getId(),25);
+
     }
 }
