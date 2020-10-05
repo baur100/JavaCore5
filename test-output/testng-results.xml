@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="26" passed="21" failed="1" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-24T02:39:01Z" name="Master Suite" finished-at="2020-09-24T02:40:19Z" duration-ms="77772">
+    <groups>
+    </groups>
+    <test started-at="2020-09-24T02:39:01Z" name="All tests" finished-at="2020-09-24T02:40:19Z" duration-ms="77748">
+      <class name="koel_PageTests_My.LoginTest_my">
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:01Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:04Z" duration-ms="2103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="loginTest1()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:04Z" name="loginTest1" finished-at="2020-09-24T02:39:05Z" duration-ms="1234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest1 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:05Z" name="tearDown" finished-at="2020-09-24T02:39:10Z" duration-ms="5082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest1 status=SUCCESS method=LoginTest_my.loginTest1()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:10Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:10Z" duration-ms="517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="negativeLoginTest2()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:10Z" name="negativeLoginTest2" finished-at="2020-09-24T02:39:16Z" duration-ms="5626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:16Z" name="tearDown" finished-at="2020-09-24T02:39:21Z" duration-ms="5072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeLoginTest2 status=SUCCESS method=LoginTest_my.negativeLoginTest2()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:21Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:22Z" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="loginTest3()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:22Z" name="loginTest3" finished-at="2020-09-24T02:39:23Z" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest3 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:23Z" name="tearDown" finished-at="2020-09-24T02:39:28Z" duration-ms="5074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest3 status=SUCCESS method=LoginTest_my.loginTest3()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:28Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:28Z" duration-ms="453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="negativeLoginTest3()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:28Z" name="negativeLoginTest3" finished-at="2020-09-24T02:39:34Z" duration-ms="5605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest3 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:34Z" name="tearDown" finished-at="2020-09-24T02:39:39Z" duration-ms="5072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeLoginTest3 status=SUCCESS method=LoginTest_my.negativeLoginTest3()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:39Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:39Z" duration-ms="428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="loginTest4()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:39Z" name="loginTest4" finished-at="2020-09-24T02:39:40Z" duration-ms="887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest4 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:40Z" name="tearDown" finished-at="2020-09-24T02:39:45Z" duration-ms="5075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest4 status=SUCCESS method=LoginTest_my.loginTest4()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:45Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:46Z" duration-ms="498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="negativeLoginTest4()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:46Z" name="negativeLoginTest4" finished-at="2020-09-24T02:39:51Z" duration-ms="5574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest4 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3]" started-at="2020-09-24T02:39:51Z" name="tearDown" finished-at="2020-09-24T02:39:57Z" duration-ms="5075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeLoginTest4 status=SUCCESS method=LoginTest_my.negativeLoginTest4()[pri:0, instance:koel_PageTests_My.LoginTest_my@4fcd19b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- koel_PageTests_My.LoginTest_my -->
+      <class name="koel_PageTests_My.PlaylistTest_my1">
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:01Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:04Z" duration-ms="2103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="createPlaylistTest11()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:04Z" name="createPlaylistTest11" finished-at="2020-09-24T02:39:07Z" duration-ms="2983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlaylistTest11 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:07Z" name="tearDown" finished-at="2020-09-24T02:39:12Z" duration-ms="5080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createPlaylistTest11 status=SUCCESS method=PlaylistTest_my1.createPlaylistTest11()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:12Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:12Z" duration-ms="534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="renamePlaylistTest11()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:12Z" name="renamePlaylistTest11" finished-at="2020-09-24T02:39:15Z" duration-ms="2861" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at koel_PageTests_My.PlaylistTest_my1.renamePlaylistTest11(PlaylistTest_my1.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renamePlaylistTest11 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:15Z" name="tearDown" finished-at="2020-09-24T02:39:20Z" duration-ms="5072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=renamePlaylistTest11 status=SKIP method=PlaylistTest_my1.renamePlaylistTest11()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:20Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:21Z" duration-ms="483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="renamePlaylistTest11()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:21Z" name="renamePlaylistTest11" finished-at="2020-09-24T02:39:24Z" duration-ms="3134" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at koel_PageTests_My.PlaylistTest_my1.renamePlaylistTest11(PlaylistTest_my1.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renamePlaylistTest11 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:24Z" name="tearDown" finished-at="2020-09-24T02:39:29Z" duration-ms="5074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=renamePlaylistTest11 status=SKIP method=PlaylistTest_my1.renamePlaylistTest11()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:29Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:29Z" duration-ms="449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="renamePlaylistTest11()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:29Z" name="renamePlaylistTest11" finished-at="2020-09-24T02:39:32Z" duration-ms="2729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renamePlaylistTest11 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:32Z" name="tearDown" finished-at="2020-09-24T02:39:37Z" duration-ms="5075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=renamePlaylistTest11 status=SUCCESS method=PlaylistTest_my1.renamePlaylistTest11()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:37Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:37Z" duration-ms="408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="createPlaylistTest22()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:37Z" name="createPlaylistTest22" finished-at="2020-09-24T02:39:40Z" duration-ms="2318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlaylistTest22 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:40Z" name="tearDown" finished-at="2020-09-24T02:39:45Z" duration-ms="5073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createPlaylistTest22 status=SUCCESS method=PlaylistTest_my1.createPlaylistTest22()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:45Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:45Z" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="renamePlaylistTest22()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:45Z" name="renamePlaylistTest22" finished-at="2020-09-24T02:39:48Z" duration-ms="2685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renamePlaylistTest22 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a]" started-at="2020-09-24T02:39:48Z" name="tearDown" finished-at="2020-09-24T02:39:53Z" duration-ms="5075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=renamePlaylistTest22 status=SUCCESS method=PlaylistTest_my1.renamePlaylistTest22()[pri:0, instance:koel_PageTests_My.PlaylistTest_my1@5d11346a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- koel_PageTests_My.PlaylistTest_my1 -->
+      <class name="koel_PageTests_My.LoginTest_my1">
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:01Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:04Z" duration-ms="2103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="loginTest11()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:04Z" name="loginTest11" finished-at="2020-09-24T02:39:05Z" duration-ms="1294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest11 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:05Z" name="tearDown" finished-at="2020-09-24T02:39:10Z" duration-ms="5076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest11 status=SUCCESS method=LoginTest_my1.loginTest11()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:10Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:10Z" duration-ms="498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="negativeLoginTest11()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:10Z" name="negativeLoginTest11" finished-at="2020-09-24T02:39:16Z" duration-ms="5602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest11 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:16Z" name="tearDown" finished-at="2020-09-24T02:39:21Z" duration-ms="5074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeLoginTest11 status=SUCCESS method=LoginTest_my1.negativeLoginTest11()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:21Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:22Z" duration-ms="546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="loginTest22()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:22Z" name="loginTest22" finished-at="2020-09-24T02:39:27Z" duration-ms="5804" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at koel_PageTests_My.LoginTest_my1.loginTest22(LoginTest_my1.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest22 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:27Z" name="tearDown" finished-at="2020-09-24T02:39:33Z" duration-ms="5564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest22 status=FAILURE method=LoginTest_my1.loginTest22()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:33Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:33Z" duration-ms="420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="negativeLoginTest22()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:33Z" name="negativeLoginTest22" finished-at="2020-09-24T02:39:39Z" duration-ms="5563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest22 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:39Z" name="tearDown" finished-at="2020-09-24T02:39:44Z" duration-ms="5073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeLoginTest22 status=SUCCESS method=LoginTest_my1.negativeLoginTest22()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:44Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:44Z" duration-ms="417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="loginTest33()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:44Z" name="loginTest33" finished-at="2020-09-24T02:39:46Z" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest33 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:46Z" name="tearDown" finished-at="2020-09-24T02:39:51Z" duration-ms="5072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest33 status=SUCCESS method=LoginTest_my1.loginTest33()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:51Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:51Z" duration-ms="416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="negativeLoginTest33()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:51Z" name="negativeLoginTest33" finished-at="2020-09-24T02:39:57Z" duration-ms="5528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest33 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:39:57Z" name="tearDown" finished-at="2020-09-24T02:40:02Z" duration-ms="5080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeLoginTest33 status=SUCCESS method=LoginTest_my1.negativeLoginTest33()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:40:02Z" name="beforeEveryTest" finished-at="2020-09-24T02:40:02Z" duration-ms="422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="loginTest44()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:40:02Z" name="loginTest44" finished-at="2020-09-24T02:40:03Z" duration-ms="914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest44 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:40:03Z" name="tearDown" finished-at="2020-09-24T02:40:08Z" duration-ms="5084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest44 status=SUCCESS method=LoginTest_my1.loginTest44()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:40:08Z" name="beforeEveryTest" finished-at="2020-09-24T02:40:08Z" duration-ms="442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="negativeLoginTest44()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:40:08Z" name="negativeLoginTest44" finished-at="2020-09-24T02:40:14Z" duration-ms="5568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest44 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233]" started-at="2020-09-24T02:40:14Z" name="tearDown" finished-at="2020-09-24T02:40:19Z" duration-ms="5077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeLoginTest44 status=SUCCESS method=LoginTest_my1.negativeLoginTest44()[pri:0, instance:koel_PageTests_My.LoginTest_my1@376b4233] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- koel_PageTests_My.LoginTest_my1 -->
+      <class name="koel_PageTests_My.PlaylistTest_my">
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:01Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:04Z" duration-ms="2103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="createPlaylistTest1()[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:04Z" name="createPlaylistTest1" finished-at="2020-09-24T02:39:07Z" duration-ms="3043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlaylistTest1 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:07Z" name="tearDown" finished-at="2020-09-24T02:39:12Z" duration-ms="5074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createPlaylistTest1 status=SUCCESS method=PlaylistTest_my.createPlaylistTest1()[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:12Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:12Z" duration-ms="550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="renamePlaylistTest1()[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:12Z" name="renamePlaylistTest1" finished-at="2020-09-24T02:39:15Z" duration-ms="2893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renamePlaylistTest1 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:15Z" name="tearDown" finished-at="2020-09-24T02:39:20Z" duration-ms="5074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=renamePlaylistTest1 status=SUCCESS method=PlaylistTest_my.renamePlaylistTest1()[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:20Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:21Z" duration-ms="468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="createPlaylistTest2()[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:21Z" name="createPlaylistTest2" finished-at="2020-09-24T02:39:23Z" duration-ms="2557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlaylistTest2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:23Z" name="tearDown" finished-at="2020-09-24T02:39:28Z" duration-ms="5077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createPlaylistTest2 status=SUCCESS method=PlaylistTest_my.createPlaylistTest2()[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeEveryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:28Z" name="beforeEveryTest" finished-at="2020-09-24T02:39:29Z" duration-ms="454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser06@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="renamePlaylistTest2()[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:29Z" name="renamePlaylistTest2" finished-at="2020-09-24T02:39:31Z" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renamePlaylistTest2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3]" started-at="2020-09-24T02:39:31Z" name="tearDown" finished-at="2020-09-24T02:39:37Z" duration-ms="5073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=renamePlaylistTest2 status=SUCCESS method=PlaylistTest_my.renamePlaylistTest2()[pri:0, instance:koel_PageTests_My.PlaylistTest_my@2fd66ad3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- koel_PageTests_My.PlaylistTest_my -->
+    </test> <!-- All tests -->
+    <test started-at="2020-09-24T02:40:19Z" name="Other Tests" finished-at="2020-09-24T02:40:19Z" duration-ms="0">
+    </test> <!-- Other Tests -->
+  </suite> <!-- Master Suite -->
+</testng-results>
