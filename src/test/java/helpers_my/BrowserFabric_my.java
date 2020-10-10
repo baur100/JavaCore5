@@ -1,4 +1,4 @@
-package koel_Helpers_my;
+package helpers_my;
 
 import enums_my.BrowserType_my;
 import org.openqa.selenium.WebDriver;
@@ -10,8 +10,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
-
-import java.awt.*;
 
 
 public class BrowserFabric_my {
@@ -43,7 +41,6 @@ public class BrowserFabric_my {
     private static WebDriver getEdgeDriver() {
         System.setProperty("webdriver.edge.driver", "msedgedriver");
         EdgeOptions options = new EdgeOptions();
-        options.addArguments("--headless");
         return new EdgeDriver();
     }
 

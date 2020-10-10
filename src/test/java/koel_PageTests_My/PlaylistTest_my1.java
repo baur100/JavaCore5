@@ -1,7 +1,7 @@
 package koel_PageTests_My;
 
 
-import koel_Helpers_my.TestDataGenerator_my;
+import helpers_my.TestDataGenerator_my;
 import koel_PageObjects_My.LoginPage_my;
 import koel_PageObjects_My.MainPage_my;
 import listeners_my.RetryAnalyzer_my;

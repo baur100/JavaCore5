@@ -1,4 +1,4 @@
-package koel_Helpers_my;
+package helpers_my;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;

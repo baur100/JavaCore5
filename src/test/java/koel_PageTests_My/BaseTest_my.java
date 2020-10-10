@@ -1,9 +1,8 @@
 package koel_PageTests_My;
 
-import enums.BrowserType;
 import enums_my.BrowserType_my;
-import koel_Helpers_my.BrowserFabric_my;
-import koel_Helpers_my.GetScreenshot;
+import helpers_my.BrowserFabric_my;
+import helpers_my.GetScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
