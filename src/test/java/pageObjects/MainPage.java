@@ -60,6 +60,16 @@ public class MainPage extends BasePage{
     }
 
     public void renamePlaylist(String playlistId, String newName) {
+        for(int i=0; i<20; i++){
+            try {
+                logger.info("search for plus button");
+                getPlusButton().click();
+                logger.warn("Just try warn level "+i);
+                break;
+            } catch (ElementClickInterceptedException xx) {
+                logger.error("Plus button not found - one more retry");
+            }
+        }
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         WebElement playlist = driver.findElement(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
         jsExecutor.executeScript( "arguments[0].scrollIntoView();",playlist);
