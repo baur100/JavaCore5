@@ -19,7 +19,7 @@ public class PlaylistTest_my1 extends BaseTest_my {
         loginPage.open();
         MainPage_my mainPage = loginPage.logIn(username,password);
         String playlistId = mainPage.createPlaylist(name);
-        Assert.assertTrue(mainPage.isPlaylistExist(playlistId));
+        Assert.assertTrue(mainPage.isPlaylistExist(playlistId, playlistId));
 
     }
 
@@ -51,7 +51,7 @@ public class PlaylistTest_my1 extends BaseTest_my {
         loginPage.open();
         MainPage_my mainPage = loginPage.logIn(username,password);
         String playlistId = mainPage.createPlaylist(name);
-        Assert.assertTrue(mainPage.isPlaylistExist(playlistId));
+        Assert.assertTrue(mainPage.isPlaylistExist(playlistId, playlistId));
 
     }
 

@@ -10,7 +10,7 @@
     <parameter name="browser" value="Chrome"></parameter>
     <test name="All tests">
         <classes>
-            <class name="koel_PageTests_My.LoginTest_my">
+            <class name="koel_PageTests_My.PlaylistTest_my">
                 <methods>
                     <include name="loginTest1"/>
                     <include name="negativeLoginTest1"/>
@@ -23,31 +23,31 @@
                 </methods>
             </class>
 
-            <class name="koel_PageTests_My.LoginTest_my1"><methods>
-                <include name="loginTest11"/>
-                <include name="negativeLoginTest11"/>
-                <include name="loginTest22"/>
-                <include name="negativeLoginTest22"/>
-                <include name="loginTest33"/>
-                <include name="negativeLoginTest33"/>
-                <include name="loginTest44"/>
-                <include name="negativeLoginTest44"/>
+<!--            <class name="koel_PageTests_My.LoginTest_my1"><methods>-->
+<!--                <include name="loginTest11"/>-->
+<!--                <include name="negativeLoginTest11"/>-->
+<!--                <include name="loginTest22"/>-->
+<!--                <include name="negativeLoginTest22"/>-->
+<!--                <include name="loginTest33"/>-->
+<!--                <include name="negativeLoginTest33"/>-->
+<!--                <include name="loginTest44"/>-->
+<!--                <include name="negativeLoginTest44"/>-->
 
-            </methods></class>
-            <class name="koel_PageTests_My.PlaylistTest_my"><methods>
-                <include name="createPlaylistTest1"/>
-                <include name="renamePlaylistTest1"/>
-                <include name="createPlaylistTest2"/>
-                <include name="renamePlaylistTest2"/>
-            </methods></class>
+<!--            </methods></class>-->
+<!--            <class name="koel_PageTests_My.PlaylistTest_my"><methods>-->
+<!--                <include name="createPlaylistTest1"/>-->
+<!--                <include name="renamePlaylistTest1"/>-->
+<!--                <include name="createPlaylistTest2"/>-->
+<!--                <include name="renamePlaylistTest2"/>-->
+<!--            </methods></class>-->
 
-            <class name="koel_PageTests_My.PlaylistTest_my1"><methods>
-                <include name="createPlaylistTest11"/>
-                <include name="renamePlaylistTest11"/>
-                <include name="createPlaylistTest22"/>
-                <include name="renamePlaylistTest22"/>
-            </methods>
-            </class>
+<!--            <class name="koel_PageTests_My.PlaylistTest_my1"><methods>-->
+<!--                <include name="createPlaylistTest11"/>-->
+<!--                <include name="renamePlaylistTest11"/>-->
+<!--                <include name="createPlaylistTest22"/>-->
+<!--                <include name="renamePlaylistTest22"/>-->
+<!--            </methods>-->
+<!--            </class>-->
 
         </classes>
     </test>

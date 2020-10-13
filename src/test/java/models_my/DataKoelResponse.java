@@ -20,4 +20,8 @@ public class DataKoelResponse {
     private boolean useiTunes;
     private Users[] users;
 
+    public Playlist[] getPlaylists() {
+        return playlists;
+    }
+
 }

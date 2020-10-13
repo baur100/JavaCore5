@@ -5,8 +5,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import pageObjects.MainPage;
 
 import java.util.List;
 
@@ -77,7 +75,7 @@ public class MainPage_my extends BasePage_my {
         return list.size() > 0 && list.get(0).getText().equals(newName);
     }
 
-    public boolean isPlaylistExist(String playlistId) {
+    public boolean isPlaylistExist(String id, String playlistId) {
         List<WebElement> list = driver.findElements(By.xpath("//*[@href='#!/playlist/" + playlistId + "']"));
         return list.size() > 0;
     }
