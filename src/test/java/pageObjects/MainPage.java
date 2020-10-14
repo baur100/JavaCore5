@@ -1,5 +1,7 @@
 package pageObjects;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -7,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 
 public class MainPage extends BasePage{
+    private static Logger logger = LogManager.getLogger(MainPage.class);
+
     public MainPage(WebDriver driver) {
         super(driver);
     }
@@ -20,11 +24,16 @@ public class MainPage extends BasePage{
     }
 
     public String createPlaylist(String name){
+        logger.info("createPlaylist method started");
         for(int i=0; i<20; i++){
             try {
+                logger.info("search for plus button");
                 getPlusButton().click();
+                logger.warn("Just try warn level "+i);
                 break;
-            } catch (ElementClickInterceptedException ignored) {}
+            } catch (ElementClickInterceptedException xx) {
+                logger.error("Plus button not found - one more retry");
+            }
         }
 
 
@@ -37,6 +46,7 @@ public class MainPage extends BasePage{
 
     public boolean isPlaylistExist(String playlistId, String name){
         List<WebElement> list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
+        logger.info(list.size() > 0 && list.get(0).getText().equals(name));
         return list.size() > 0 && list.get(0).getText().equals(name);
     }
 
@@ -50,11 +60,22 @@ public class MainPage extends BasePage{
     }
 
     public void renamePlaylist(String playlistId, String newName) {
+        for(int i=0; i<20; i++){
+            try {
+                logger.info("search for plus button");
+                getPlusButton().click();
+                logger.warn("Just try warn level "+i);
+                break;
+            } catch (ElementClickInterceptedException xx) {
+                logger.error("Plus button not found - one more retry");
+            }
+        }
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         WebElement playlist = driver.findElement(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
         jsExecutor.executeScript( "arguments[0].scrollIntoView();",playlist);
 
         Actions actions = new Actions(driver);
+        logger.error("im here "+driver.getCurrentUrl());
         actions.doubleClick(playlist).perform();
 
         WebElement editPlaylistField = driver.findElement(By.xpath("//*[@class='playlist playlist editing']/input"));

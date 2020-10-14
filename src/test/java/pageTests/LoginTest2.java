@@ -5,45 +5,44 @@ import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import pageObjects.MainPage;
 
-public class LoginTest extends BaseTest {
+public class LoginTest2 extends BaseTest {
     @Test
-    public void loginTest(){
+    public void loginTestx(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.logIn(username,password);
         Assert.assertTrue(mainPage.isLogoutButton());
     }
-    @Test(enabled=false)
-    // TODO Update test later
-    public void wrongLoginTest(){
+    @Test
+    public void wrongLoginTestx(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.logIn(username,"88888888");
         Assert.assertFalse(mainPage.isLogoutButton());
     }
     @Test
-    public void loginTest1(){
+    public void loginTest1x(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.logIn(username,password);
+        MainPage mainPage = loginPage.logIn(username,password+"1");
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test
-    public void wrongLoginTest1(){
+    public void wrongLoginTest1x(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.logIn(username,"88888888");
         Assert.assertFalse(mainPage.isLogoutButton());
     }
     @Test
-    public void loginTest2(){
+    public void loginTest2x(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.logIn(username,password);
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test
-    public void wrongLoginTest2(){
+    public void wrongLoginTest2x(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.logIn(username,"88888888");
