@@ -20,7 +20,7 @@ public class UdemyTest {
     private FluentWait<WebDriver> fluentWait;
     @BeforeMethod
     public void startUp(){
-        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","chromedriver");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver,20);
         fluentWait = new FluentWait<WebDriver>(driver)
@@ -65,5 +65,37 @@ public class UdemyTest {
 
         WebElement signUpMessage = driver.findElement(By.id("auth-to-udemy-title"));
         Assert.assertEquals(signUpMessage.getText(),"Sign Up and Start Learning!");
+    }
+    @Test
+    public void clickTeachOnUdemy() {
+        fluentWait.until(x->x.findElement(By.xpath("//*[text()='Teach on Udemy']")));
+        WebElement teachOnUdemy = driver.findElement(By.xpath("//*[text()='Teach on Udemy']"));
+        teachOnUdemy.click();
+
+        fluentWait.until(x->x.findElement(By.cssSelector("[data-purpose='bai-cta']")));
+        WebElement becomeAnInstructor = driver.findElement(By.cssSelector("[data-purpose='bai-cta']"));
+        Assert.assertEquals(becomeAnInstructor.getText(), "Become an instructor");
+    }
+    @Test
+    public void clickOnBecomeAnInsructor() throws InterruptedException {
+        fluentWait.until(x->x.findElement(By.xpath("//*[text()='Teach on Udemy']")));
+        WebElement teachOnUdemy = driver.findElement(By.xpath("//*[text()='Teach on Udemy']"));
+        teachOnUdemy.click();
+
+        fluentWait.until(x->x.findElement(By.xpath("//*[text()='Become an instructor']")));
+        WebElement becomeAnInstructor = driver.findElement(By.xpath("//*[text()='Become an instructor']"));
+        becomeAnInstructor.click();
+
+        fluentWait.until(x->x.findElement(By.id("auth-to-udemy-title")));
+        WebElement signUpButton = driver.findElement(By.id("auth-to-udemy-title"));
+        Thread.sleep(5000);
+        //signUpButton.click();
+        Assert.assertEquals(signUpButton.getText(),"Become a Udemy Instructor!");
+        //"auth-to-udemy-title"
+
+    }
+    @Test
+    public void serchSelenium() {
+        WebElement searchBar = driver.findElement(By.)
     }
 }

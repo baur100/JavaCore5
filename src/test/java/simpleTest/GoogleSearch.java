@@ -12,7 +12,7 @@ public class GoogleSearch {
     @Test
     public void searchJavaInGoogle_ResultReturned()  {
         // Arrange
-        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.google.com");
@@ -40,7 +40,7 @@ public class GoogleSearch {
     @Test
     public void searchJavaInGoogleUsingSearchButton_ResultReturned()  {
         // Arrange
-        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.google.com");

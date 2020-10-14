@@ -7,7 +7,7 @@ public class Google implements ManualTester{
 
     }
     public void testCases() {
-        System.out.println("Test cases also good for Google");
+        System.out.println("Test cases good for Google");
 
     }
 }

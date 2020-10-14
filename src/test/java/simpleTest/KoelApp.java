@@ -18,7 +18,7 @@ public class KoelApp {
     private FluentWait<WebDriver> fluentWait;
     @BeforeMethod
     public void startUp(){
-        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","chromedriver");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver,10);
         fluentWait = new FluentWait<WebDriver>(driver)
