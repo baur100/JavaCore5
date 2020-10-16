@@ -2,6 +2,8 @@ package dbTests;
 
 import helper.DbAdapter;
 import models.Artist;
+import models.Playlist;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -10,9 +12,17 @@ public class GetArtists {
     @Test
     public void printArtists(){
         List<Artist> artists = DbAdapter.getArtists();
-        for (Artist ar: artists) {
-            System.out.println(ar);
-        }
-
+        Assert.assertEquals(artists.size(),52);
+        Assert.assertEquals(artists.get(6).name,"Ketsa");
+    }
+    @Test
+    public void printPlaylists(){
+        List<Playlist> pls = DbAdapter.getAllPlaylists();
+        Assert.assertEquals(pls.size(),4);
+    }
+    @Test
+    public void getPlaylistById(){
+        Playlist pl = DbAdapter.getPlaylistById(1308);
+        Assert.assertEquals(pl.getName(),"YYY");
     }
 }
