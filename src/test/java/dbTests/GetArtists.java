@@ -3,6 +3,7 @@ package dbTests;
 import helper.DbAdapter;
 import models.Artist;
 import models.Playlist;
+import models.Song;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,5 +25,11 @@ public class GetArtists {
     public void getPlaylistById(){
         Playlist pl = DbAdapter.getPlaylistById(1308);
         Assert.assertEquals(pl.getName(),"YYY");
+    }
+    @Test
+    public void getAllSongs(){
+        List<Song> songs = DbAdapter.getAllSongs();
+        songs.forEach(x-> System.out.println(x.title));
+
     }
 }

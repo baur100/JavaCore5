@@ -2,6 +2,7 @@ package helper;
 
 import models.Artist;
 import models.Playlist;
+import models.Song;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -112,5 +113,42 @@ public class DbAdapter {
             }
         }
         return playlist;
+    }
+
+    public static List<Song> getAllSongs(){
+        List<Song> songs = new ArrayList<>();
+        try{
+            Class.forName(JDBC_DRIVER);
+            connection = DriverManager.getConnection(DB_URL,USER,PASS);
+            statement = connection.createStatement();
+
+            String query = "select * from songs";
+            ResultSet result = statement.executeQuery(query);
+
+            while (result.next()){
+                String id = result.getString("id");
+                int album_id = result.getInt("album_id");
+                int artist_id = result.getInt("artist_id");
+                String title = result.getString("title");
+                int disc = result.getInt("disc");
+                int track = result.getInt("track");
+                double length = result.getDouble("length");
+
+
+                Song song = new Song(id,album_id,artist_id,title,disc,track,length);
+                songs.add(song);
+
+            }
+        } catch (ClassNotFoundException | SQLException ignored){}
+        finally {
+            if(connection!=null){
+                try{
+                    connection.close();
+                } catch (SQLException err){
+                    err.printStackTrace();
+                }
+            }
+        }
+        return songs;
     }
 }
