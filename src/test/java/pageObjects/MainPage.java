@@ -46,7 +46,7 @@ public class MainPage extends BasePage{
 
     public boolean isPlaylistExist(String playlistId, String name){
         List<WebElement> list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
-        logger.error(list.size() > 0 && list.get(0).getText().equals(name));
+        logger.info(list.size() > 0 && list.get(0).getText().equals(name));
         return list.size() > 0 && list.get(0).getText().equals(name);
     }
 
