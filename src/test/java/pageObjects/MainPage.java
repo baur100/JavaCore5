@@ -10,7 +10,6 @@ import java.util.List;
 
 public class MainPage extends BasePage{
     private static Logger logger = LogManager.getLogger(MainPage.class);
-
     public MainPage(WebDriver driver) {
         super(driver);
     }
