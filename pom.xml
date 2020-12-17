@@ -33,7 +33,7 @@
                 <version>3.0.0-M3</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng${browser}.xml</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

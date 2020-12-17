@@ -9,13 +9,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 
 public class MainPage extends BasePage{
-    private static Logger logger = LogManager.getLogger(MainPage.class);
-
+    public static Logger logger1 = LogManager.getLogger(MainPage.class);
     public MainPage(WebDriver driver) {
         super(driver);
     }
 
-    private WebElement getPlusButton(){
+    public WebElement getPlusButton(){
+        // comment
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".fa-plus-circle")));
         return driver.findElement(By.cssSelector(".fa-plus-circle"));
     }
@@ -24,15 +24,15 @@ public class MainPage extends BasePage{
     }
 
     public String createPlaylist(String name){
-        logger.info("createPlaylist method started");
+        logger1.info("createPlaylist method started");
         for(int i=0; i<20; i++){
             try {
-                logger.info("search for plus button");
+                logger1.info("search for plus button");
                 getPlusButton().click();
-                logger.warn("Just try warn level "+i);
+                logger1.warn("Just try warn level "+i);
                 break;
             } catch (ElementClickInterceptedException xx) {
-                logger.error("Plus button not found - one more retry");
+                logger1.error("Plus button not found - one more retry");
             }
         }
 
@@ -46,7 +46,8 @@ public class MainPage extends BasePage{
 
     public boolean isPlaylistExist(String playlistId, String name){
         List<WebElement> list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
-        logger.info(list.size() > 0 && list.get(0).getText().equals(name));
+        logger1.error(list.size() > 0 && list.get(0).getText().equals(name));
+
         return list.size() > 0 && list.get(0).getText().equals(name);
     }
 
@@ -62,12 +63,12 @@ public class MainPage extends BasePage{
     public void renamePlaylist(String playlistId, String newName) {
         for(int i=0; i<20; i++){
             try {
-                logger.info("search for plus button");
+                logger1.info("search for plus button");
                 getPlusButton().click();
-                logger.warn("Just try warn level "+i);
+                logger1.warn("Just try warn level "+i);
                 break;
             } catch (ElementClickInterceptedException xx) {
-                logger.error("Plus button not found - one more retry");
+                logger1.error("Plus button not found - one more retry");
             }
         }
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -75,7 +76,7 @@ public class MainPage extends BasePage{
         jsExecutor.executeScript( "arguments[0].scrollIntoView();",playlist);
 
         Actions actions = new Actions(driver);
-        logger.error("im here "+driver.getCurrentUrl());
+        logger1.error("im here "+driver.getCurrentUrl());
         actions.doubleClick(playlist).perform();
 
         WebElement editPlaylistField = driver.findElement(By.xpath("//*[@class='playlist playlist editing']/input"));
