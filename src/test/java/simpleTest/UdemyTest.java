@@ -94,8 +94,5 @@ public class UdemyTest {
         //"auth-to-udemy-title"
 
     }
-    @Test
-    public void serchSelenium() {
-        WebElement searchBar = driver.findElement(By.)
-    }
+//
 }

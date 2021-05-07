@@ -2,7 +2,7 @@ package JavaExersices;
 
 public class App2 {
     public static void main(String[] args) {
-        int xx = 100;
+        int xx = 15;
         fizzbuzz(xx);
     }
 
